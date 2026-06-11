@@ -1,0 +1,674 @@
+# companies.txt — feed to discover.py:  python discover.py companies.txt >> companies.yaml
+# One company per line. Lines starting with # are skipped.
+# Note: Big 4 / banks / government mostly use Workday, SuccessFactors or PageUp —
+# discover.py will report those as misses; watch them via Seek/LinkedIn alerts instead.
+
+# ===== From your Notion job tracker =====
+Atlassian
+Lyrebird Health
+Cover Genius
+Bugcrowd
+MongoDB
+Stake
+Kasada
+Canva
+Quantium
+SafetyCulture
+REA Group
+Databricks
+Tiliter
+Mantel Group
+Eliiza
+Cluey Learning
+Halaxy
+ELMO Software
+Heidi Health
+Lendi
+Domain Group
+MYOB
+Iress
+Immutable
+
+# ===== AU tech & scaleups =====
+WiseTech Global
+Xero
+Deputy
+Employment Hero
+Culture Amp
+Linktree
+Dovetail
+SiteMinder
+Airtasker
+Finder
+Rokt
+Eucalyptus
+Pet Circle
+Koala
+Prospa
+Athena Home Loans
+Brighte
+Zeller
+Zip Co
+Afterpay
+Block
+Mr Yum
+me&u
+Shippit
+Sendle
+GO1
+Octopus Deploy
+Buildkite
+A Cloud Guru
+Pluralsight
+Envato
+Aconex
+Nearmap
+Propeller Aero
+Swoop Aero
+Gilmour Space
+Q-CTRL
+Harrison.ai
+Annalise.ai
+Displayr
+HealthEngine
+Pearler
+Mable
+HiPages
+Hnry
+Vow
+Sonder
+InDebted
+Karbon
+Practice Ignition
+Ignition
+SiteQuote
+Compass Education
+Sentral Education
+Janison
+Education Perfect
+Cluey
+Matific
+SkoolBag
+Lumary
+Splose
+Carepatron
+Heidi
+Lumos Diagnostics
+ResMed
+Cochlear
+PEXA
+InfoTrack
+LEAP Legal Software
+Smokeball
+Josef
+Lawpath
+Immutable Systems
+LegalVision
+
+# ===== Fintech & crypto AU =====
+Tyro Payments
+Judo Bank
+Up Bank
+Ferocia
+86400
+Revolut
+Wise
+Stripe
+Airwallex
+Monoova
+Zai
+Till Payments
+Pin Payments
+Swyftx
+CoinSpot
+BTC Markets
+Independent Reserve
+Block Earner
+Zerocap
+Maple Finance
+Synthetix
+Labrys
+CoinJar
+Cointree
+Stables
+FinClear
+Netwealth
+HUB24
+Praemium
+SuperEd
+Spaceship
+Raiz Invest
+Sharesies
+Pearler Investments
+Open Markets
+Selfwealth
+Tiger Brokers
+moomoo
+Interactive Brokers
+
+# ===== Web3 / Solana (remote-friendly, his interest) =====
+Solana Foundation
+Solana Labs
+Anza
+Phantom
+Helius
+Jito Labs
+Jupiter Exchange
+Drift Protocol
+Squads
+Tensor
+Metaplex
+Dialect
+Triton One
+Pyth Network
+Wormhole Foundation
+Magic Eden
+Chainalysis
+Consensys
+Alchemy
+QuickNode
+Ledger
+Fireblocks
+Circle
+Ripple
+Uniswap Labs
+OpenSea
+Polygon Labs
+Offchain Labs
+Matter Labs
+
+# ===== Consulting — junior/graduate friendly =====
+Deloitte
+PwC
+EY
+KPMG
+Accenture
+Capgemini
+IBM Consulting
+McKinsey
+Boston Consulting Group
+Bain
+Oliver Wyman
+Kearney
+LEK Consulting
+Strategy&
+Slalom
+Thoughtworks
+Versent
+Servian
+Cognizant
+Infosys
+Tata Consultancy Services
+Wipro
+Tech Mahindra
+HCLTech
+NTT Data
+DXC Technology
+Datacom
+CGI
+Sopra Steria
+Nous Group
+Partners in Performance
+Synergy Group
+Arq Group
+Telstra Purple
+Deloitte Digital
+Akkodis
+Modis
+Avanade
+Insight Enterprises
+Kinetic IT
+Interactive
+Data#3
+Atturra
+FinXL
+Paxus
+Talent International
+The Missing Link
+CMD Solutions
+Cevo
+Itoc
+Cuscal
+Innablr
+Contino
+Kasna
+CMD
+Servian Data
+Aginic
+The Data Foundry
+Cuusoo
+Notitia
+Biarri
+Taysols
+Altis Consulting
+Decision Inc
+Keytree
+RXP Group
+Industrie&Co
+Palo IT
+Cprime
+Elabor8
+Pragmateam
+Everest Engineering
+DiUS
+Shine Solutions
+Bilue
+Itty Bitty Apps
+Outware Mobile
+WorkingMouse
+Codebots
+Readify
+Telstra Health
+
+# ===== Cybersecurity AU =====
+CyberCX
+Tesserent
+Secure Code Warrior
+Penten
+Sekuro
+Triskele Labs
+Internet 2.0
+Phriendly Phishing
+Cydarm
+Devicie
+Plerion
+Cybermerc
+Hivint
+Shearwater Solutions
+Gridware
+Cosive
+Ionize
+archTIS
+Senetas
+Tide Foundation
+
+# ===== Global tech with AU offices =====
+Google
+Amazon
+Microsoft
+Apple
+Salesforce
+Adobe
+Oracle
+SAP
+Cisco
+ServiceNow
+Workday
+Snowflake
+Datadog
+Elastic
+Confluent
+HashiCorp
+GitLab
+Figma
+Notion
+Slack
+Zoom
+Twilio
+Okta
+CrowdStrike
+Palo Alto Networks
+Fortinet
+Zscaler
+Cloudflare
+Fastly
+Akamai
+New Relic
+Splunk
+PagerDuty
+LaunchDarkly
+Vercel
+Netlify
+DigitalOcean
+Red Hat
+VMware
+Nutanix
+Pure Storage
+NetApp
+Dell Technologies
+HPE
+Lenovo
+Intel
+NVIDIA
+Qualcomm
+Zendesk
+HubSpot
+Intuit
+PayPal
+eBay
+Uber
+DoorDash
+Airbnb
+Expedia
+Booking.com
+Agoda
+TripAdvisor
+LinkedIn
+Pinterest
+Reddit
+Spotify
+Netflix
+Roblox
+Epic Games
+Unity
+Electronic Arts
+Konami
+Aristocrat
+Light and Wonder
+Big Ant Studios
+PlaySide Studios
+Mighty Kingdom
+OpenAI
+Anthropic
+Scale AI
+Hugging Face
+Cohere
+Mistral AI
+Perplexity
+Writer
+Glean
+Harvey
+
+# ===== Enterprise / banks / telco / retail (mostly Workday/SuccessFactors — expect misses) =====
+Commonwealth Bank
+Westpac
+ANZ
+NAB
+Macquarie Group
+Suncorp
+Bendigo and Adelaide Bank
+ING Australia
+AMP
+Insurance Australia Group
+QBE
+Allianz Australia
+Medibank
+Bupa
+nib Group
+Telstra
+Optus
+TPG Telecom
+Vocus
+Aussie Broadband
+Superloop
+Woolworths Group
+WooliesX
+Coles Group
+Wesfarmers
+Bunnings
+Kmart Group
+Endeavour Group
+Qantas
+Virgin Australia
+Transurban
+Sydney Airport
+AGL Energy
+Origin Energy
+EnergyAustralia
+APA Group
+Ausgrid
+Transgrid
+BHP
+Rio Tinto
+Fortescue
+Orica
+Brambles
+Goodman Group
+Lendlease
+Mirvac
+Stockland
+Seek
+Carsales
+Flight Centre
+Webjet
+Corporate Travel Management
+
+# ===== Supply chain, logistics & freight (new track) =====
+Linfox
+Toll Group
+Qube Holdings
+Brambles
+CHEP
+DHL Supply Chain
+DHL Express
+FedEx
+UPS
+Aramex
+Australia Post
+StarTrack
+Team Global Express
+Followmont Transport
+Mainfreight
+Kuehne Nagel
+DB Schenker
+DSV
+CEVA Logistics
+Expeditors
+C.H. Robinson
+Flexport
+Ofload
+Zoom2u
+CouriersPlease
+Border Express
+Lindsay Australia
+ACFS Port Logistics
+Patrick Terminals
+DP World
+Maersk
+MSC
+Hapag-Lloyd
+CMA CGM
+Svitzer
+ANL Container Line
+Visa Global Logistics
+Yusen Logistics
+Agility Logistics
+GEODIS
+Rhenus Logistics
+Bollore Logistics
+Toll People
+
+# ===== Supply chain software & procurement tech =====
+WiseTech CargoWise
+Blue Yonder
+Manhattan Associates
+Korber Supply Chain
+Kinaxis
+o9 Solutions
+Coupa
+GEP
+Ivalua
+Jaggaer
+Zycus
+Project44
+FourKites
+Shippeo
+GoComet
+Locus Robotics
+Bringg
+Onfleet
+Locate2u
+Adiona
+Yojee
+Uber Freight
+Stord
+ShipBob
+ShipHero
+Easyship
+Anchanto
+Logiwa
+Unleashed Software
+Cin7
+TradeGecko
+Linnworks
+Brightpearl
+Procurify
+Precoro
+Tradeshift
+Basware
+Esker
+SPS Commerce
+E2open
+Infor
+Epicor
+IFS
+Felix
+VendorPanel
+Portt
+ArcBlue
+
+# ===== Retail, FMCG & ops (supply chain heavy employers) =====
+ALDI Australia
+Metcash
+Costco Australia
+Amazon Operations
+IKEA Australia
+JB Hi-Fi
+Harvey Norman
+The Iconic
+Temple and Webster
+Officeworks
+Super Retail Group
+Accent Group
+Cotton On Group
+Breville
+Reece Group
+Coca-Cola Europacific Partners
+Lion
+Asahi Beverages
+Treasury Wine Estates
+Nestle Australia
+Unilever Australia
+Procter and Gamble
+Mars Australia
+Mondelez
+PepsiCo Australia
+Arnotts Group
+Bega Group
+Fonterra
+Sanitarium
+Goodman Fielder
+Inghams
+JBS Australia
+Teys Australia
+EBOS Group
+Sigma Healthcare
+Symbion
+Blackmores
+Swisse
+BWX
+
+# ===== More global IT services & consulting (junior-friendly, often sponsor) =====
+Publicis Sapient
+EPAM Systems
+Globant
+Endava
+Luxoft
+GlobalLogic
+Persistent Systems
+LTIMindtree
+Mphasis
+Zensar
+UST
+Virtusa
+Hexaware
+Coforge
+Birlasoft
+Happiest Minds
+Mindtree
+Grant Thornton
+BDO
+RSM Australia
+Protiviti
+FTI Consulting
+Alvarez and Marsal
+Kroll
+GHD Digital
+Aurecon
+Arup
+AECOM
+Jacobs
+WSP
+Worley
+Downer Group
+Ventia
+John Holland
+Laing O'Rourke
+Multiplex
+Built
+Lendlease Digital
+Procore
+Autodesk
+Aconex Oracle
+Buildertrend
+Buildxact
+Mastt
+Matrak
+Visibuild
+HammerTech
+
+# ===== More fintech / global remote-friendly tech =====
+Remote
+Deel
+Rippling
+Gusto
+Brex
+Ramp
+Plaid
+Coinbase
+Kraken
+Gemini
+Crypto.com
+OKX
+Binance
+eToro
+Robinhood
+Wealthsimple
+Monzo
+N26
+Klarna
+Adyen
+Checkout.com
+Marqeta
+Galileo
+Thought Machine
+10x Banking
+Mambu
+Temenos
+FIS
+Fiserv
+Global Payments
+Worldline
+Nuvei
+Bottomline
+ACI Worldwide
+
+# ===== More AU tech & infrastructure =====
+Megaport
+NextDC
+Macquarie Telecom
+Symbio
+Dicker Data
+Whispir
+Phocas Software
+TechnologyOne
+Objective Corporation
+Hansen Technologies
+Gentrack
+Bravura Solutions
+GBST
+FNZ
+Sandstone Technology
+Constantinople
+Cuscal
+EML Payments
+Novatti
+Change Financial
+Identitii
+FrankieOne
+GreenID
+Equifax Australia
+illion
+Experian Australia
+CreditorWatch
+Dun and Bradstreet

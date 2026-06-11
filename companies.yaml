@@ -68,3 +68,3370 @@ companies:
   #   slug: cba/CommBank_Careers/cba.wd3.myworkdayjobs.com
 
   # Add as many as you want — each poll cycle handles dozens easily.
+  - name: Atlassian
+    ats: lever
+    slug: atlassian
+
+  - name: Lyrebird Health
+    ats: lever
+    slug: lyrebirdhealth
+
+  - name: Cover Genius
+    ats: smartrecruiters
+    slug: covergenius
+
+  - name: Bugcrowd
+    ats: greenhouse
+    slug: bugcrowd
+
+  - name: MongoDB
+    ats: greenhouse
+    slug: mongodb
+
+  - name: Stake
+    ats: smartrecruiters
+    slug: stake
+
+  - name: Kasada
+    ats: lever
+    slug: kasada
+
+  - name: Canva
+    ats: smartrecruiters
+    slug: canva
+
+  - name: Quantium
+    ats: greenhouse
+    slug: quantium
+
+  - name: SafetyCulture
+    ats: ashby
+    slug: safetyculture
+
+  - name: REA Group
+    ats: smartrecruiters
+    slug: reagroup
+
+  - name: Databricks
+    ats: greenhouse
+    slug: databricks
+
+  - name: Tiliter
+    ats: smartrecruiters
+    slug: tiliter
+
+  - name: Mantel Group
+    ats: smartrecruiters
+    slug: mantelgroup
+
+  - name: Eliiza
+    ats: smartrecruiters
+    slug: eliiza
+
+  - name: Cluey Learning
+    ats: smartrecruiters
+    slug: clueylearning
+
+  - name: Halaxy
+    ats: smartrecruiters
+    slug: halaxy
+
+  - name: ELMO Software
+    ats: smartrecruiters
+    slug: elmosoftware
+
+  - name: Heidi Health
+    ats: smartrecruiters
+    slug: heidihealth
+
+  - name: Lendi
+    ats: smartrecruiters
+    slug: lendi
+
+  - name: Domain Group
+    ats: smartrecruiters
+    slug: domaingroup
+
+  - name: MYOB
+    ats: smartrecruiters
+    slug: myob
+
+  - name: Iress
+    ats: smartrecruiters
+    slug: iress
+
+  - name: Immutable
+    ats: lever
+    slug: immutable
+
+  - name: WiseTech Global
+    ats: smartrecruiters
+    slug: wisetechglobal
+
+  - name: Xero
+    ats: ashby
+    slug: xero
+
+  - name: Deputy
+    ats: lever
+    slug: deputy
+
+  - name: Employment Hero
+    ats: smartrecruiters
+    slug: employmenthero
+
+  - name: Culture Amp
+    ats: greenhouse
+    slug: cultureamp
+
+  - name: Linktree
+    ats: smartrecruiters
+    slug: linktree
+
+  - name: Dovetail
+    ats: ashby
+    slug: dovetail
+
+  - name: SiteMinder
+    ats: ashby
+    slug: siteminder
+
+  - name: Airtasker
+    ats: lever
+    slug: airtasker
+
+  - name: Finder
+    ats: smartrecruiters
+    slug: finder
+
+  - name: Rokt
+    ats: ashby
+    slug: rokt
+
+  - name: Eucalyptus
+    ats: greenhouse
+    slug: eucalyptus
+
+  - name: Pet Circle
+    ats: smartrecruiters
+    slug: petcircle
+
+  - name: Koala
+    ats: smartrecruiters
+    slug: koala
+
+  - name: Prospa
+    ats: greenhouse
+    slug: prospa
+
+  - name: Athena Home Loans
+    ats: smartrecruiters
+    slug: athenahomeloans
+
+  - name: Brighte
+    ats: lever
+    slug: brighte
+
+  - name: Zeller
+    ats: smartrecruiters
+    slug: zeller
+
+  - name: Zip Co
+    ats: smartrecruiters
+    slug: zipco
+
+  - name: Afterpay
+    ats: smartrecruiters
+    slug: afterpay
+
+  - name: Block
+    ats: greenhouse
+    slug: block
+
+  - name: Mr Yum
+    ats: smartrecruiters
+    slug: mryum
+
+  - name: me&u
+    ats: smartrecruiters
+    slug: meu
+
+  - name: Shippit
+    ats: smartrecruiters
+    slug: shippit
+
+  - name: Sendle
+    ats: greenhouse
+    slug: sendle
+
+  - name: GO1
+    ats: smartrecruiters
+    slug: go1
+
+  - name: Octopus Deploy
+    ats: greenhouse
+    slug: octopusdeploy
+
+  - name: Buildkite
+    ats: greenhouse
+    slug: buildkite
+
+  - name: A Cloud Guru
+    ats: smartrecruiters
+    slug: acloudguru
+
+  - name: Pluralsight
+    ats: smartrecruiters
+    slug: pluralsight
+
+  - name: Envato
+    ats: smartrecruiters
+    slug: envato
+
+  - name: Aconex
+    ats: smartrecruiters
+    slug: aconex
+
+  - name: Nearmap
+    ats: smartrecruiters
+    slug: nearmap
+
+  - name: Propeller Aero
+    ats: smartrecruiters
+    slug: propelleraero
+
+  - name: Swoop Aero
+    ats: smartrecruiters
+    slug: swoopaero
+
+  - name: Gilmour Space
+    ats: smartrecruiters
+    slug: gilmourspace
+
+  - name: Q-CTRL
+    ats: smartrecruiters
+    slug: qctrl
+
+  - name: Harrison.ai
+    ats: smartrecruiters
+    slug: harrisonai
+
+  - name: Annalise.ai
+    ats: smartrecruiters
+    slug: annaliseai
+
+  - name: Displayr
+    ats: smartrecruiters
+    slug: displayr
+
+  - name: HealthEngine
+    ats: smartrecruiters
+    slug: healthengine
+
+  - name: Pearler
+    ats: smartrecruiters
+    slug: pearler
+
+  - name: Mable
+    ats: lever
+    slug: mable
+
+  - name: HiPages
+    ats: smartrecruiters
+    slug: hipages
+
+  - name: Hnry
+    ats: smartrecruiters
+    slug: hnry
+
+  - name: Vow
+    ats: ashby
+    slug: vow
+
+  - name: Sonder
+    ats: smartrecruiters
+    slug: sonder
+
+  - name: InDebted
+    ats: lever
+    slug: indebted
+
+  - name: Karbon
+    ats: greenhouse
+    slug: karbon
+
+  - name: Practice Ignition
+    ats: smartrecruiters
+    slug: practiceignition
+
+  - name: Ignition
+    ats: greenhouse
+    slug: ignition
+
+  - name: SiteQuote
+    ats: smartrecruiters
+    slug: sitequote
+
+  - name: Compass Education
+    ats: smartrecruiters
+    slug: compasseducation
+
+  - name: Sentral Education
+    ats: smartrecruiters
+    slug: sentraleducation
+
+  - name: Janison
+    ats: smartrecruiters
+    slug: janison
+
+  - name: Education Perfect
+    ats: smartrecruiters
+    slug: educationperfect
+
+  - name: Cluey
+    ats: smartrecruiters
+    slug: cluey
+
+  - name: Matific
+    ats: smartrecruiters
+    slug: matific
+
+  - name: SkoolBag
+    ats: smartrecruiters
+    slug: skoolbag
+
+  - name: Lumary
+    ats: smartrecruiters
+    slug: lumary
+
+  - name: Splose
+    ats: ashby
+    slug: splose
+
+  - name: Carepatron
+    ats: smartrecruiters
+    slug: carepatron
+
+  - name: Heidi
+    ats: smartrecruiters
+    slug: heidi
+
+  - name: Lumos Diagnostics
+    ats: smartrecruiters
+    slug: lumosdiagnostics
+
+  - name: ResMed
+    ats: smartrecruiters
+    slug: resmed
+
+  - name: Cochlear
+    ats: smartrecruiters
+    slug: cochlear
+
+  - name: PEXA
+    ats: lever
+    slug: pexa
+
+  - name: InfoTrack
+    ats: smartrecruiters
+    slug: infotrack
+
+  - name: LEAP Legal Software
+    ats: smartrecruiters
+    slug: leaplegalsoftware
+
+  - name: Smokeball
+    ats: smartrecruiters
+    slug: smokeball
+
+  - name: Josef
+    ats: smartrecruiters
+    slug: josef
+
+  - name: Lawpath
+    ats: smartrecruiters
+    slug: lawpath
+
+  - name: Immutable Systems
+    ats: smartrecruiters
+    slug: immutablesystems
+
+  - name: LegalVision
+    ats: smartrecruiters
+    slug: legalvision
+
+  - name: Tyro Payments
+    ats: smartrecruiters
+    slug: tyropayments
+
+  - name: Judo Bank
+    ats: smartrecruiters
+    slug: judobank
+
+  - name: Up Bank
+    ats: smartrecruiters
+    slug: upbank
+
+  - name: Ferocia
+    ats: greenhouse
+    slug: ferocia
+
+  - name: 86400
+    ats: smartrecruiters
+    slug: 86400
+
+  - name: Revolut
+    ats: smartrecruiters
+    slug: revolut
+
+  - name: Wise
+    ats: smartrecruiters
+    slug: wise
+
+  - name: Stripe
+    ats: greenhouse
+    slug: stripe
+
+  - name: Airwallex
+    ats: ashby
+    slug: airwallex
+
+  - name: Monoova
+    ats: smartrecruiters
+    slug: monoova
+
+  - name: Zai
+    ats: smartrecruiters
+    slug: zai
+
+  - name: Till Payments
+    ats: smartrecruiters
+    slug: tillpayments
+
+  - name: Pin Payments
+    ats: smartrecruiters
+    slug: pinpayments
+
+  - name: Swyftx
+    ats: smartrecruiters
+    slug: swyftx
+
+  - name: CoinSpot
+    ats: smartrecruiters
+    slug: coinspot
+
+  - name: BTC Markets
+    ats: smartrecruiters
+    slug: btcmarkets
+
+  - name: Independent Reserve
+    ats: smartrecruiters
+    slug: independentreserve
+
+  - name: Block Earner
+    ats: smartrecruiters
+    slug: blockearner
+
+  - name: Zerocap
+    ats: smartrecruiters
+    slug: zerocap
+
+  - name: Maple Finance
+    ats: smartrecruiters
+    slug: maplefinance
+
+  - name: Synthetix
+    ats: smartrecruiters
+    slug: synthetix
+
+  - name: Labrys
+    ats: smartrecruiters
+    slug: labrys
+
+  - name: CoinJar
+    ats: smartrecruiters
+    slug: coinjar
+
+  - name: Cointree
+    ats: smartrecruiters
+    slug: cointree
+
+  - name: Stables
+    ats: smartrecruiters
+    slug: stables
+
+  - name: FinClear
+    ats: smartrecruiters
+    slug: finclear
+
+  - name: Netwealth
+    ats: ashby
+    slug: netwealth
+
+  - name: HUB24
+    ats: smartrecruiters
+    slug: hub24
+
+  - name: Praemium
+    ats: smartrecruiters
+    slug: praemium
+
+  - name: SuperEd
+    ats: smartrecruiters
+    slug: supered
+
+  - name: Spaceship
+    ats: greenhouse
+    slug: spaceship
+
+  - name: Raiz Invest
+    ats: smartrecruiters
+    slug: raizinvest
+
+  - name: Sharesies
+    ats: smartrecruiters
+    slug: sharesies
+
+  - name: Pearler Investments
+    ats: smartrecruiters
+    slug: pearlerinvestments
+
+  - name: Open Markets
+    ats: smartrecruiters
+    slug: openmarkets
+
+  - name: Selfwealth
+    ats: smartrecruiters
+    slug: selfwealth
+
+  - name: Tiger Brokers
+    ats: smartrecruiters
+    slug: tigerbrokers
+
+  - name: moomoo
+    ats: smartrecruiters
+    slug: moomoo
+
+  - name: Interactive Brokers
+    ats: smartrecruiters
+    slug: interactivebrokers
+
+  - name: Solana Foundation
+    ats: smartrecruiters
+    slug: solanafoundation
+
+  - name: Solana Labs
+    ats: ashby
+    slug: solanalabs
+
+  - name: Anza
+    ats: smartrecruiters
+    slug: anza
+
+  - name: Phantom
+    ats: ashby
+    slug: phantom
+
+  - name: Helius
+    ats: ashby
+    slug: helius
+
+  - name: Jito Labs
+    ats: smartrecruiters
+    slug: jitolabs
+
+  - name: Jupiter Exchange
+    ats: smartrecruiters
+    slug: jupiterexchange
+
+  - name: Drift Protocol
+    ats: smartrecruiters
+    slug: driftprotocol
+
+  - name: Squads
+    ats: ashby
+    slug: squads
+
+  - name: Tensor
+    ats: smartrecruiters
+    slug: tensor
+
+  - name: Metaplex
+    ats: smartrecruiters
+    slug: metaplex
+
+  - name: Dialect
+    ats: smartrecruiters
+    slug: dialect
+
+  - name: Triton One
+    ats: smartrecruiters
+    slug: tritonone
+
+  - name: Pyth Network
+    ats: ashby
+    slug: pythnetwork
+
+  - name: Wormhole Foundation
+    ats: smartrecruiters
+    slug: wormholefoundation
+
+  - name: Magic Eden
+    ats: ashby
+    slug: magiceden
+
+  - name: Chainalysis
+    ats: smartrecruiters
+    slug: chainalysis
+
+  - name: Consensys
+    ats: greenhouse
+    slug: consensys
+
+  - name: Alchemy
+    ats: ashby
+    slug: alchemy
+
+  - name: QuickNode
+    ats: ashby
+    slug: quicknode
+
+  - name: Ledger
+    ats: lever
+    slug: ledger
+
+  - name: Fireblocks
+    ats: greenhouse
+    slug: fireblocks
+
+  - name: Circle
+    ats: smartrecruiters
+    slug: circle
+
+  - name: Ripple
+    ats: greenhouse
+    slug: ripple
+
+  - name: Uniswap Labs
+    ats: smartrecruiters
+    slug: uniswaplabs
+
+  - name: OpenSea
+    ats: ashby
+    slug: opensea
+
+  - name: Polygon Labs
+    ats: smartrecruiters
+    slug: polygonlabs
+
+  - name: Offchain Labs
+    ats: lever
+    slug: offchainlabs
+
+  - name: Matter Labs
+    ats: smartrecruiters
+    slug: matterlabs
+
+  - name: Deloitte
+    ats: smartrecruiters
+    slug: deloitte
+
+  - name: PwC
+    ats: smartrecruiters
+    slug: pwc
+
+  - name: EY
+    ats: smartrecruiters
+    slug: ey
+
+  - name: KPMG
+    ats: lever
+    slug: kpmg
+
+  - name: Accenture
+    ats: smartrecruiters
+    slug: accenture
+
+  - name: Capgemini
+    ats: smartrecruiters
+    slug: capgemini
+
+  - name: IBM Consulting
+    ats: smartrecruiters
+    slug: ibmconsulting
+
+  - name: McKinsey
+    ats: smartrecruiters
+    slug: mckinsey
+
+  - name: Boston Consulting Group
+    ats: smartrecruiters
+    slug: bostonconsultinggroup
+
+  - name: Bain
+    ats: smartrecruiters
+    slug: bain
+
+  - name: Oliver Wyman
+    ats: lever
+    slug: oliverwyman
+
+  - name: Kearney
+    ats: smartrecruiters
+    slug: kearney
+
+  - name: LEK Consulting
+    ats: smartrecruiters
+    slug: lekconsulting
+
+  - name: Strategy&
+    ats: smartrecruiters
+    slug: strategy
+
+  - name: Slalom
+    ats: smartrecruiters
+    slug: slalom
+
+  - name: Thoughtworks
+    ats: greenhouse
+    slug: thoughtworks
+
+  - name: Versent
+    ats: smartrecruiters
+    slug: versent
+
+  - name: Servian
+    ats: lever
+    slug: servian
+
+  - name: Cognizant
+    ats: smartrecruiters
+    slug: cognizant
+
+  - name: Infosys
+    ats: smartrecruiters
+    slug: infosys
+
+  - name: Tata Consultancy Services
+    ats: smartrecruiters
+    slug: tataconsultancyservices
+
+  - name: Wipro
+    ats: smartrecruiters
+    slug: wipro
+
+  - name: Tech Mahindra
+    ats: smartrecruiters
+    slug: techmahindra
+
+  - name: HCLTech
+    ats: smartrecruiters
+    slug: hcltech
+
+  - name: NTT Data
+    ats: smartrecruiters
+    slug: nttdata
+
+  - name: DXC Technology
+    ats: smartrecruiters
+    slug: dxctechnology
+
+  - name: Datacom
+    ats: smartrecruiters
+    slug: datacom
+
+  - name: CGI
+    ats: smartrecruiters
+    slug: cgi
+
+  - name: Sopra Steria
+    ats: smartrecruiters
+    slug: soprasteria
+
+  - name: Nous Group
+    ats: greenhouse
+    slug: nousgroup
+
+  - name: Partners in Performance
+    ats: smartrecruiters
+    slug: partnersinperformance
+
+  - name: Synergy Group
+    ats: smartrecruiters
+    slug: synergygroup
+
+  - name: Arq Group
+    ats: smartrecruiters
+    slug: arqgroup
+
+  - name: Telstra Purple
+    ats: smartrecruiters
+    slug: telstrapurple
+
+  - name: Deloitte Digital
+    ats: smartrecruiters
+    slug: deloittedigital
+
+  - name: Akkodis
+    ats: smartrecruiters
+    slug: akkodis
+
+  - name: Modis
+    ats: smartrecruiters
+    slug: modis
+
+  - name: Avanade
+    ats: smartrecruiters
+    slug: avanade
+
+  - name: Insight Enterprises
+    ats: smartrecruiters
+    slug: insightenterprises
+
+  - name: Kinetic IT
+    ats: smartrecruiters
+    slug: kineticit
+
+  - name: Interactive
+    ats: smartrecruiters
+    slug: interactive
+
+  - name: Data#3
+    ats: smartrecruiters
+    slug: data3
+
+  - name: Atturra
+    ats: smartrecruiters
+    slug: atturra
+
+  - name: FinXL
+    ats: smartrecruiters
+    slug: finxl
+
+  - name: Paxus
+    ats: smartrecruiters
+    slug: paxus
+
+  - name: Talent International
+    ats: smartrecruiters
+    slug: talentinternational
+
+  - name: The Missing Link
+    ats: smartrecruiters
+    slug: themissinglink
+
+  - name: CMD Solutions
+    ats: smartrecruiters
+    slug: cmdsolutions
+
+  - name: Cevo
+    ats: smartrecruiters
+    slug: cevo
+
+  - name: Itoc
+    ats: smartrecruiters
+    slug: itoc
+
+  - name: Cuscal
+    ats: smartrecruiters
+    slug: cuscal
+
+  - name: Innablr
+    ats: lever
+    slug: innablr
+
+  - name: Contino
+    ats: smartrecruiters
+    slug: contino
+
+  - name: Kasna
+    ats: smartrecruiters
+    slug: kasna
+
+  - name: CMD
+    ats: smartrecruiters
+    slug: cmd
+
+  - name: Servian Data
+    ats: smartrecruiters
+    slug: serviandata
+
+  - name: Aginic
+    ats: smartrecruiters
+    slug: aginic
+
+  - name: The Data Foundry
+    ats: smartrecruiters
+    slug: thedatafoundry
+
+  - name: Cuusoo
+    ats: smartrecruiters
+    slug: cuusoo
+
+  - name: Notitia
+    ats: smartrecruiters
+    slug: notitia
+
+  - name: Biarri
+    ats: smartrecruiters
+    slug: biarri
+
+  - name: Taysols
+    ats: smartrecruiters
+    slug: taysols
+
+  - name: Altis Consulting
+    ats: smartrecruiters
+    slug: altisconsulting
+
+  - name: Decision Inc
+    ats: smartrecruiters
+    slug: decisioninc
+
+  - name: Keytree
+    ats: smartrecruiters
+    slug: keytree
+
+  - name: RXP Group
+    ats: smartrecruiters
+    slug: rxpgroup
+
+  - name: Industrie&Co
+    ats: smartrecruiters
+    slug: industrieco
+
+  - name: Palo IT
+    ats: greenhouse
+    slug: paloit
+
+  - name: Cprime
+    ats: lever
+    slug: cprime
+
+  - name: Elabor8
+    ats: smartrecruiters
+    slug: elabor8
+
+  - name: Pragmateam
+    ats: smartrecruiters
+    slug: pragmateam
+
+  - name: Everest Engineering
+    ats: smartrecruiters
+    slug: everestengineering
+
+  - name: DiUS
+    ats: smartrecruiters
+    slug: dius
+
+  - name: Shine Solutions
+    ats: smartrecruiters
+    slug: shinesolutions
+
+  - name: Bilue
+    ats: smartrecruiters
+    slug: bilue
+
+  - name: Itty Bitty Apps
+    ats: smartrecruiters
+    slug: ittybittyapps
+
+  - name: Outware Mobile
+    ats: smartrecruiters
+    slug: outwaremobile
+
+  - name: WorkingMouse
+    ats: smartrecruiters
+    slug: workingmouse
+
+  - name: Codebots
+    ats: smartrecruiters
+    slug: codebots
+
+  - name: Readify
+    ats: smartrecruiters
+    slug: readify
+
+  - name: Telstra Health
+    ats: smartrecruiters
+    slug: telstrahealth
+
+  - name: CyberCX
+    ats: smartrecruiters
+    slug: cybercx
+
+  - name: Tesserent
+    ats: smartrecruiters
+    slug: tesserent
+
+  - name: Secure Code Warrior
+    ats: lever
+    slug: securecodewarrior
+
+  - name: Penten
+    ats: smartrecruiters
+    slug: penten
+
+  - name: Sekuro
+    ats: smartrecruiters
+    slug: sekuro
+
+  - name: Triskele Labs
+    ats: smartrecruiters
+    slug: triskelelabs
+
+  - name: Internet 2.0
+    ats: smartrecruiters
+    slug: internet20
+
+  - name: Phriendly Phishing
+    ats: smartrecruiters
+    slug: phriendlyphishing
+
+  - name: Cydarm
+    ats: smartrecruiters
+    slug: cydarm
+
+  - name: Devicie
+    ats: smartrecruiters
+    slug: devicie
+
+  - name: Plerion
+    ats: smartrecruiters
+    slug: plerion
+
+  - name: Cybermerc
+    ats: smartrecruiters
+    slug: cybermerc
+
+  - name: Hivint
+    ats: smartrecruiters
+    slug: hivint
+
+  - name: Shearwater Solutions
+    ats: smartrecruiters
+    slug: shearwatersolutions
+
+  - name: Gridware
+    ats: lever
+    slug: gridware
+
+  - name: Cosive
+    ats: smartrecruiters
+    slug: cosive
+
+  - name: Ionize
+    ats: smartrecruiters
+    slug: ionize
+
+  - name: archTIS
+    ats: smartrecruiters
+    slug: archtis
+
+  - name: Senetas
+    ats: smartrecruiters
+    slug: senetas
+
+  - name: Tide Foundation
+    ats: smartrecruiters
+    slug: tidefoundation
+
+  - name: Google
+    ats: smartrecruiters
+    slug: google
+
+  - name: Amazon
+    ats: smartrecruiters
+    slug: amazon
+
+  - name: Microsoft
+    ats: smartrecruiters
+    slug: microsoft
+
+  - name: Apple
+    ats: smartrecruiters
+    slug: apple
+
+  - name: Salesforce
+    ats: smartrecruiters
+    slug: salesforce
+
+  - name: Adobe
+    ats: smartrecruiters
+    slug: adobe
+
+  - name: Oracle
+    ats: smartrecruiters
+    slug: oracle
+
+  - name: SAP
+    ats: smartrecruiters
+    slug: sap
+
+  - name: Cisco
+    ats: smartrecruiters
+    slug: cisco
+
+  - name: ServiceNow
+    ats: smartrecruiters
+    slug: servicenow
+
+  - name: Workday
+    ats: smartrecruiters
+    slug: workday
+
+  - name: Snowflake
+    ats: ashby
+    slug: snowflake
+
+  - name: Datadog
+    ats: greenhouse
+    slug: datadog
+
+  - name: Elastic
+    ats: greenhouse
+    slug: elastic
+
+  - name: Confluent
+    ats: ashby
+    slug: confluent
+
+  - name: HashiCorp
+    ats: smartrecruiters
+    slug: hashicorp
+
+  - name: GitLab
+    ats: greenhouse
+    slug: gitlab
+
+  - name: Figma
+    ats: greenhouse
+    slug: figma
+
+  - name: Notion
+    ats: ashby
+    slug: notion
+
+  - name: Slack
+    ats: smartrecruiters
+    slug: slack
+
+  - name: Zoom
+    ats: smartrecruiters
+    slug: zoom
+
+  - name: Twilio
+    ats: greenhouse
+    slug: twilio
+
+  - name: Okta
+    ats: greenhouse
+    slug: okta
+
+  - name: CrowdStrike
+    ats: smartrecruiters
+    slug: crowdstrike
+
+  - name: Palo Alto Networks
+    ats: smartrecruiters
+    slug: paloaltonetworks
+
+  - name: Fortinet
+    ats: smartrecruiters
+    slug: fortinet
+
+  - name: Zscaler
+    ats: greenhouse
+    slug: zscaler
+
+  - name: Cloudflare
+    ats: greenhouse
+    slug: cloudflare
+
+  - name: Fastly
+    ats: greenhouse
+    slug: fastly
+
+  - name: Akamai
+    ats: smartrecruiters
+    slug: akamai
+
+  - name: New Relic
+    ats: greenhouse
+    slug: newrelic
+
+  - name: Splunk
+    ats: smartrecruiters
+    slug: splunk
+
+  - name: PagerDuty
+    ats: greenhouse
+    slug: pagerduty
+
+  - name: LaunchDarkly
+    ats: greenhouse
+    slug: launchdarkly
+
+  - name: Vercel
+    ats: greenhouse
+    slug: vercel
+
+  - name: Netlify
+    ats: greenhouse
+    slug: netlify
+
+  - name: DigitalOcean
+    ats: smartrecruiters
+    slug: digitalocean
+
+  - name: Red Hat
+    ats: smartrecruiters
+    slug: redhat
+
+  - name: VMware
+    ats: smartrecruiters
+    slug: vmware
+
+  - name: Nutanix
+    ats: smartrecruiters
+    slug: nutanix
+
+  - name: Pure Storage
+    ats: greenhouse
+    slug: purestorage
+
+  - name: NetApp
+    ats: smartrecruiters
+    slug: netapp
+
+  - name: Dell Technologies
+    ats: smartrecruiters
+    slug: delltechnologies
+
+  - name: HPE
+    ats: smartrecruiters
+    slug: hpe
+
+  - name: Lenovo
+    ats: smartrecruiters
+    slug: lenovo
+
+  - name: Intel
+    ats: smartrecruiters
+    slug: intel
+
+  - name: NVIDIA
+    ats: smartrecruiters
+    slug: nvidia
+
+  - name: Qualcomm
+    ats: smartrecruiters
+    slug: qualcomm
+
+  - name: Zendesk
+    ats: smartrecruiters
+    slug: zendesk
+
+  - name: HubSpot
+    ats: greenhouse
+    slug: hubspot
+
+  - name: Intuit
+    ats: smartrecruiters
+    slug: intuit
+
+  - name: PayPal
+    ats: smartrecruiters
+    slug: paypal
+
+  - name: eBay
+    ats: smartrecruiters
+    slug: ebay
+
+  - name: Uber
+    ats: smartrecruiters
+    slug: uber
+
+  - name: DoorDash
+    ats: smartrecruiters
+    slug: doordash
+
+  - name: Airbnb
+    ats: greenhouse
+    slug: airbnb
+
+  - name: Expedia
+    ats: smartrecruiters
+    slug: expedia
+
+  - name: Booking.com
+    ats: smartrecruiters
+    slug: bookingcom
+
+  - name: Agoda
+    ats: greenhouse
+    slug: agoda
+
+  - name: TripAdvisor
+    ats: greenhouse
+    slug: tripadvisor
+
+  - name: LinkedIn
+    ats: greenhouse
+    slug: linkedin
+
+  - name: Pinterest
+    ats: greenhouse
+    slug: pinterest
+
+  - name: Reddit
+    ats: greenhouse
+    slug: reddit
+
+  - name: Spotify
+    ats: lever
+    slug: spotify
+
+  - name: Netflix
+    ats: lever
+    slug: netflix
+
+  - name: Roblox
+    ats: greenhouse
+    slug: roblox
+
+  - name: Epic Games
+    ats: greenhouse
+    slug: epicgames
+
+  - name: Unity
+    ats: smartrecruiters
+    slug: unity
+
+  - name: Electronic Arts
+    ats: smartrecruiters
+    slug: electronicarts
+
+  - name: Konami
+    ats: smartrecruiters
+    slug: konami
+
+  - name: Aristocrat
+    ats: smartrecruiters
+    slug: aristocrat
+
+  - name: Light and Wonder
+    ats: smartrecruiters
+    slug: lightandwonder
+
+  - name: Big Ant Studios
+    ats: smartrecruiters
+    slug: bigantstudios
+
+  - name: PlaySide Studios
+    ats: smartrecruiters
+    slug: playsidestudios
+
+  - name: Mighty Kingdom
+    ats: smartrecruiters
+    slug: mightykingdom
+
+  - name: OpenAI
+    ats: ashby
+    slug: openai
+
+  - name: Anthropic
+    ats: greenhouse
+    slug: anthropic
+
+  - name: Scale AI
+    ats: greenhouse
+    slug: scaleai
+
+  - name: Hugging Face
+    ats: smartrecruiters
+    slug: huggingface
+
+  - name: Cohere
+    ats: ashby
+    slug: cohere
+
+  - name: Mistral AI
+    ats: smartrecruiters
+    slug: mistralai
+
+  - name: Perplexity
+    ats: ashby
+    slug: perplexity
+
+  - name: Writer
+    ats: ashby
+    slug: writer
+
+  - name: Glean
+    ats: smartrecruiters
+    slug: glean
+
+  - name: Harvey
+    ats: ashby
+    slug: harvey
+
+  - name: Commonwealth Bank
+    ats: smartrecruiters
+    slug: commonwealthbank
+
+  - name: Westpac
+    ats: smartrecruiters
+    slug: westpac
+
+  - name: ANZ
+    ats: smartrecruiters
+    slug: anz
+
+  - name: NAB
+    ats: smartrecruiters
+    slug: nab
+
+  - name: Macquarie Group
+    ats: smartrecruiters
+    slug: macquariegroup
+
+  - name: Suncorp
+    ats: smartrecruiters
+    slug: suncorp
+
+  - name: Bendigo and Adelaide Bank
+    ats: smartrecruiters
+    slug: bendigoandadelaidebank
+
+  - name: ING Australia
+    ats: smartrecruiters
+    slug: ingaustralia
+
+  - name: AMP
+    ats: ashby
+    slug: amp
+
+  - name: Insurance Australia Group
+    ats: smartrecruiters
+    slug: insuranceaustraliagroup
+
+  - name: QBE
+    ats: smartrecruiters
+    slug: qbe
+
+  - name: Allianz Australia
+    ats: smartrecruiters
+    slug: allianzaustralia
+
+  - name: Medibank
+    ats: smartrecruiters
+    slug: medibank
+
+  - name: Bupa
+    ats: smartrecruiters
+    slug: bupa
+
+  - name: nib Group
+    ats: smartrecruiters
+    slug: nibgroup
+
+  - name: Telstra
+    ats: smartrecruiters
+    slug: telstra
+
+  - name: Optus
+    ats: smartrecruiters
+    slug: optus
+
+  - name: TPG Telecom
+    ats: smartrecruiters
+    slug: tpgtelecom
+
+  - name: Vocus
+    ats: smartrecruiters
+    slug: vocus
+
+  - name: Aussie Broadband
+    ats: smartrecruiters
+    slug: aussiebroadband
+
+  - name: Superloop
+    ats: smartrecruiters
+    slug: superloop
+
+  - name: Woolworths Group
+    ats: smartrecruiters
+    slug: woolworthsgroup
+
+  - name: WooliesX
+    ats: smartrecruiters
+    slug: wooliesx
+
+  - name: Coles Group
+    ats: smartrecruiters
+    slug: colesgroup
+
+  - name: Wesfarmers
+    ats: smartrecruiters
+    slug: wesfarmers
+
+  - name: Bunnings
+    ats: smartrecruiters
+    slug: bunnings
+
+  - name: Kmart Group
+    ats: smartrecruiters
+    slug: kmartgroup
+
+  - name: Endeavour Group
+    ats: smartrecruiters
+    slug: endeavourgroup
+
+  - name: Qantas
+    ats: smartrecruiters
+    slug: qantas
+
+  - name: Virgin Australia
+    ats: smartrecruiters
+    slug: virginaustralia
+
+  - name: Transurban
+    ats: smartrecruiters
+    slug: transurban
+
+  - name: Sydney Airport
+    ats: smartrecruiters
+    slug: sydneyairport
+
+  - name: AGL Energy
+    ats: smartrecruiters
+    slug: aglenergy
+
+  - name: Origin Energy
+    ats: smartrecruiters
+    slug: originenergy
+
+  - name: EnergyAustralia
+    ats: smartrecruiters
+    slug: energyaustralia
+
+  - name: APA Group
+    ats: smartrecruiters
+    slug: apagroup
+
+  - name: Ausgrid
+    ats: smartrecruiters
+    slug: ausgrid
+
+  - name: Transgrid
+    ats: smartrecruiters
+    slug: transgrid
+
+  - name: BHP
+    ats: smartrecruiters
+    slug: bhp
+
+  - name: Rio Tinto
+    ats: smartrecruiters
+    slug: riotinto
+
+  - name: Fortescue
+    ats: smartrecruiters
+    slug: fortescue
+
+  - name: Orica
+    ats: smartrecruiters
+    slug: orica
+
+  - name: Brambles
+    ats: smartrecruiters
+    slug: brambles
+
+  - name: Goodman Group
+    ats: smartrecruiters
+    slug: goodmangroup
+
+  - name: Lendlease
+    ats: smartrecruiters
+    slug: lendlease
+
+  - name: Mirvac
+    ats: smartrecruiters
+    slug: mirvac
+
+  - name: Stockland
+    ats: smartrecruiters
+    slug: stockland
+
+  - name: Seek
+    ats: smartrecruiters
+    slug: seek
+
+  - name: Carsales
+    ats: smartrecruiters
+    slug: carsales
+
+  - name: Flight Centre
+    ats: smartrecruiters
+    slug: flightcentre
+
+  - name: Webjet
+    ats: smartrecruiters
+    slug: webjet
+
+  - name: Corporate Travel Management
+    ats: smartrecruiters
+    slug: corporatetravelmanagement
+
+  - name: Atlassian
+    ats: lever
+    slug: atlassian
+
+  - name: Lyrebird Health
+    ats: lever
+    slug: lyrebirdhealth
+
+  - name: Cover Genius
+    ats: smartrecruiters
+    slug: covergenius
+
+  - name: Bugcrowd
+    ats: greenhouse
+    slug: bugcrowd
+
+  - name: MongoDB
+    ats: greenhouse
+    slug: mongodb
+
+  - name: Stake
+    ats: smartrecruiters
+    slug: stake
+
+  - name: Kasada
+    ats: lever
+    slug: kasada
+
+  - name: Canva
+    ats: smartrecruiters
+    slug: canva
+
+  - name: Quantium
+    ats: greenhouse
+    slug: quantium
+
+  - name: SafetyCulture
+    ats: ashby
+    slug: safetyculture
+
+  - name: REA Group
+    ats: smartrecruiters
+    slug: reagroup
+
+  - name: Databricks
+    ats: greenhouse
+    slug: databricks
+
+  - name: Tiliter
+    ats: smartrecruiters
+    slug: tiliter
+
+  - name: Mantel Group
+    ats: smartrecruiters
+    slug: mantelgroup
+
+  - name: Eliiza
+    ats: smartrecruiters
+    slug: eliiza
+
+  - name: Cluey Learning
+    ats: smartrecruiters
+    slug: clueylearning
+
+  - name: Halaxy
+    ats: smartrecruiters
+    slug: halaxy
+
+  - name: ELMO Software
+    ats: smartrecruiters
+    slug: elmosoftware
+
+  - name: Heidi Health
+    ats: smartrecruiters
+    slug: heidihealth
+
+  - name: Lendi
+    ats: smartrecruiters
+    slug: lendi
+
+  - name: Domain Group
+    ats: smartrecruiters
+    slug: domaingroup
+
+  - name: MYOB
+    ats: smartrecruiters
+    slug: myob
+
+  - name: Iress
+    ats: smartrecruiters
+    slug: iress
+
+  - name: Immutable
+    ats: lever
+    slug: immutable
+
+  - name: WiseTech Global
+    ats: smartrecruiters
+    slug: wisetechglobal
+
+  - name: Xero
+    ats: ashby
+    slug: xero
+
+  - name: Deputy
+    ats: lever
+    slug: deputy
+
+  - name: Employment Hero
+    ats: smartrecruiters
+    slug: employmenthero
+
+  - name: Culture Amp
+    ats: greenhouse
+    slug: cultureamp
+
+  - name: Linktree
+    ats: smartrecruiters
+    slug: linktree
+
+  - name: Dovetail
+    ats: ashby
+    slug: dovetail
+
+  - name: SiteMinder
+    ats: ashby
+    slug: siteminder
+
+  - name: Airtasker
+    ats: lever
+    slug: airtasker
+
+  - name: Finder
+    ats: smartrecruiters
+    slug: finder
+
+  - name: Rokt
+    ats: ashby
+    slug: rokt
+
+  - name: Eucalyptus
+    ats: greenhouse
+    slug: eucalyptus
+
+  - name: Pet Circle
+    ats: smartrecruiters
+    slug: petcircle
+
+  - name: Koala
+    ats: smartrecruiters
+    slug: koala
+
+  - name: Prospa
+    ats: greenhouse
+    slug: prospa
+
+  - name: Athena Home Loans
+    ats: smartrecruiters
+    slug: athenahomeloans
+
+  - name: Brighte
+    ats: lever
+    slug: brighte
+
+  - name: Zeller
+    ats: smartrecruiters
+    slug: zeller
+
+  - name: Zip Co
+    ats: smartrecruiters
+    slug: zipco
+
+  - name: Afterpay
+    ats: smartrecruiters
+    slug: afterpay
+
+  - name: Block
+    ats: greenhouse
+    slug: block
+
+  - name: Mr Yum
+    ats: smartrecruiters
+    slug: mryum
+
+  - name: me&u
+    ats: smartrecruiters
+    slug: meu
+
+  - name: Shippit
+    ats: smartrecruiters
+    slug: shippit
+
+  - name: Sendle
+    ats: greenhouse
+    slug: sendle
+
+  - name: GO1
+    ats: smartrecruiters
+    slug: go1
+
+  - name: Octopus Deploy
+    ats: greenhouse
+    slug: octopusdeploy
+
+  - name: Buildkite
+    ats: greenhouse
+    slug: buildkite
+
+  - name: A Cloud Guru
+    ats: smartrecruiters
+    slug: acloudguru
+
+  - name: Pluralsight
+    ats: smartrecruiters
+    slug: pluralsight
+
+  - name: Envato
+    ats: smartrecruiters
+    slug: envato
+
+  - name: Aconex
+    ats: smartrecruiters
+    slug: aconex
+
+  - name: Nearmap
+    ats: smartrecruiters
+    slug: nearmap
+
+  - name: Propeller Aero
+    ats: smartrecruiters
+    slug: propelleraero
+
+  - name: Swoop Aero
+    ats: smartrecruiters
+    slug: swoopaero
+
+  - name: Gilmour Space
+    ats: smartrecruiters
+    slug: gilmourspace
+
+  - name: Q-CTRL
+    ats: smartrecruiters
+    slug: qctrl
+
+  - name: Harrison.ai
+    ats: smartrecruiters
+    slug: harrisonai
+
+  - name: Annalise.ai
+    ats: smartrecruiters
+    slug: annaliseai
+
+  - name: Displayr
+    ats: smartrecruiters
+    slug: displayr
+
+  - name: HealthEngine
+    ats: smartrecruiters
+    slug: healthengine
+
+  - name: Pearler
+    ats: smartrecruiters
+    slug: pearler
+
+  - name: Mable
+    ats: lever
+    slug: mable
+
+  - name: HiPages
+    ats: smartrecruiters
+    slug: hipages
+
+  - name: Hnry
+    ats: smartrecruiters
+    slug: hnry
+
+  - name: Vow
+    ats: ashby
+    slug: vow
+
+  - name: Sonder
+    ats: smartrecruiters
+    slug: sonder
+
+  - name: InDebted
+    ats: lever
+    slug: indebted
+
+  - name: Karbon
+    ats: greenhouse
+    slug: karbon
+
+  - name: Practice Ignition
+    ats: smartrecruiters
+    slug: practiceignition
+
+  - name: Ignition
+    ats: greenhouse
+    slug: ignition
+
+  - name: SiteQuote
+    ats: smartrecruiters
+    slug: sitequote
+
+  - name: Compass Education
+    ats: smartrecruiters
+    slug: compasseducation
+
+  - name: Sentral Education
+    ats: smartrecruiters
+    slug: sentraleducation
+
+  - name: Janison
+    ats: smartrecruiters
+    slug: janison
+
+  - name: Education Perfect
+    ats: smartrecruiters
+    slug: educationperfect
+
+  - name: Cluey
+    ats: smartrecruiters
+    slug: cluey
+
+  - name: Matific
+    ats: smartrecruiters
+    slug: matific
+
+  - name: SkoolBag
+    ats: smartrecruiters
+    slug: skoolbag
+
+  - name: Lumary
+    ats: smartrecruiters
+    slug: lumary
+
+  - name: Splose
+    ats: ashby
+    slug: splose
+
+  - name: Carepatron
+    ats: smartrecruiters
+    slug: carepatron
+
+  - name: Heidi
+    ats: smartrecruiters
+    slug: heidi
+
+  - name: Lumos Diagnostics
+    ats: smartrecruiters
+    slug: lumosdiagnostics
+
+  - name: ResMed
+    ats: smartrecruiters
+    slug: resmed
+
+  - name: Cochlear
+    ats: smartrecruiters
+    slug: cochlear
+
+  - name: PEXA
+    ats: lever
+    slug: pexa
+
+  - name: InfoTrack
+    ats: smartrecruiters
+    slug: infotrack
+
+  - name: LEAP Legal Software
+    ats: smartrecruiters
+    slug: leaplegalsoftware
+
+  - name: Smokeball
+    ats: smartrecruiters
+    slug: smokeball
+
+  - name: Josef
+    ats: smartrecruiters
+    slug: josef
+
+  - name: Lawpath
+    ats: smartrecruiters
+    slug: lawpath
+
+  - name: Immutable Systems
+    ats: smartrecruiters
+    slug: immutablesystems
+
+  - name: LegalVision
+    ats: smartrecruiters
+    slug: legalvision
+
+  - name: Tyro Payments
+    ats: smartrecruiters
+    slug: tyropayments
+
+  - name: Judo Bank
+    ats: smartrecruiters
+    slug: judobank
+
+  - name: Up Bank
+    ats: smartrecruiters
+    slug: upbank
+
+  - name: Ferocia
+    ats: greenhouse
+    slug: ferocia
+
+  - name: 86400
+    ats: smartrecruiters
+    slug: 86400
+
+  - name: Revolut
+    ats: smartrecruiters
+    slug: revolut
+
+  - name: Wise
+    ats: smartrecruiters
+    slug: wise
+
+  - name: Stripe
+    ats: greenhouse
+    slug: stripe
+
+  - name: Airwallex
+    ats: ashby
+    slug: airwallex
+
+  - name: Monoova
+    ats: smartrecruiters
+    slug: monoova
+
+  - name: Zai
+    ats: smartrecruiters
+    slug: zai
+
+  - name: Till Payments
+    ats: smartrecruiters
+    slug: tillpayments
+
+  - name: Pin Payments
+    ats: smartrecruiters
+    slug: pinpayments
+
+  - name: Swyftx
+    ats: smartrecruiters
+    slug: swyftx
+
+  - name: CoinSpot
+    ats: smartrecruiters
+    slug: coinspot
+
+  - name: BTC Markets
+    ats: smartrecruiters
+    slug: btcmarkets
+
+  - name: Independent Reserve
+    ats: smartrecruiters
+    slug: independentreserve
+
+  - name: Block Earner
+    ats: smartrecruiters
+    slug: blockearner
+
+  - name: Zerocap
+    ats: smartrecruiters
+    slug: zerocap
+
+  - name: Maple Finance
+    ats: smartrecruiters
+    slug: maplefinance
+
+  - name: Synthetix
+    ats: smartrecruiters
+    slug: synthetix
+
+  - name: Labrys
+    ats: smartrecruiters
+    slug: labrys
+
+  - name: CoinJar
+    ats: smartrecruiters
+    slug: coinjar
+
+  - name: Cointree
+    ats: smartrecruiters
+    slug: cointree
+
+  - name: Stables
+    ats: smartrecruiters
+    slug: stables
+
+  - name: FinClear
+    ats: smartrecruiters
+    slug: finclear
+
+  - name: Netwealth
+    ats: ashby
+    slug: netwealth
+
+  - name: HUB24
+    ats: smartrecruiters
+    slug: hub24
+
+  - name: Praemium
+    ats: smartrecruiters
+    slug: praemium
+
+  - name: SuperEd
+    ats: smartrecruiters
+    slug: supered
+
+  - name: Spaceship
+    ats: greenhouse
+    slug: spaceship
+
+  - name: Raiz Invest
+    ats: smartrecruiters
+    slug: raizinvest
+
+  - name: Sharesies
+    ats: smartrecruiters
+    slug: sharesies
+
+  - name: Pearler Investments
+    ats: smartrecruiters
+    slug: pearlerinvestments
+
+  - name: Open Markets
+    ats: smartrecruiters
+    slug: openmarkets
+
+  - name: Selfwealth
+    ats: smartrecruiters
+    slug: selfwealth
+
+  - name: Tiger Brokers
+    ats: smartrecruiters
+    slug: tigerbrokers
+
+  - name: moomoo
+    ats: smartrecruiters
+    slug: moomoo
+
+  - name: Interactive Brokers
+    ats: smartrecruiters
+    slug: interactivebrokers
+
+  - name: Solana Foundation
+    ats: smartrecruiters
+    slug: solanafoundation
+
+  - name: Solana Labs
+    ats: ashby
+    slug: solanalabs
+
+  - name: Anza
+    ats: smartrecruiters
+    slug: anza
+
+  - name: Phantom
+    ats: ashby
+    slug: phantom
+
+  - name: Helius
+    ats: ashby
+    slug: helius
+
+  - name: Jito Labs
+    ats: smartrecruiters
+    slug: jitolabs
+
+  - name: Jupiter Exchange
+    ats: smartrecruiters
+    slug: jupiterexchange
+
+  - name: Drift Protocol
+    ats: smartrecruiters
+    slug: driftprotocol
+
+  - name: Squads
+    ats: ashby
+    slug: squads
+
+  - name: Tensor
+    ats: smartrecruiters
+    slug: tensor
+
+  - name: Metaplex
+    ats: smartrecruiters
+    slug: metaplex
+
+  - name: Dialect
+    ats: smartrecruiters
+    slug: dialect
+
+  - name: Triton One
+    ats: smartrecruiters
+    slug: tritonone
+
+  - name: Pyth Network
+    ats: ashby
+    slug: pythnetwork
+
+  - name: Wormhole Foundation
+    ats: smartrecruiters
+    slug: wormholefoundation
+
+  - name: Magic Eden
+    ats: ashby
+    slug: magiceden
+
+  - name: Chainalysis
+    ats: smartrecruiters
+    slug: chainalysis
+
+  - name: Consensys
+    ats: greenhouse
+    slug: consensys
+
+  - name: Alchemy
+    ats: ashby
+    slug: alchemy
+
+  - name: QuickNode
+    ats: ashby
+    slug: quicknode
+
+  - name: Ledger
+    ats: lever
+    slug: ledger
+
+  - name: Fireblocks
+    ats: greenhouse
+    slug: fireblocks
+
+  - name: Circle
+    ats: smartrecruiters
+    slug: circle
+
+  - name: Ripple
+    ats: greenhouse
+    slug: ripple
+
+  - name: Uniswap Labs
+    ats: smartrecruiters
+    slug: uniswaplabs
+
+  - name: OpenSea
+    ats: ashby
+    slug: opensea
+
+  - name: Polygon Labs
+    ats: smartrecruiters
+    slug: polygonlabs
+
+  - name: Offchain Labs
+    ats: lever
+    slug: offchainlabs
+
+  - name: Matter Labs
+    ats: smartrecruiters
+    slug: matterlabs
+
+  - name: Deloitte
+    ats: smartrecruiters
+    slug: deloitte
+
+  - name: PwC
+    ats: smartrecruiters
+    slug: pwc
+
+  - name: EY
+    ats: smartrecruiters
+    slug: ey
+
+  - name: KPMG
+    ats: lever
+    slug: kpmg
+
+  - name: Accenture
+    ats: smartrecruiters
+    slug: accenture
+
+  - name: Capgemini
+    ats: smartrecruiters
+    slug: capgemini
+
+  - name: IBM Consulting
+    ats: smartrecruiters
+    slug: ibmconsulting
+
+  - name: McKinsey
+    ats: smartrecruiters
+    slug: mckinsey
+
+  - name: Boston Consulting Group
+    ats: smartrecruiters
+    slug: bostonconsultinggroup
+
+  - name: Bain
+    ats: smartrecruiters
+    slug: bain
+
+  - name: Oliver Wyman
+    ats: lever
+    slug: oliverwyman
+
+  - name: Kearney
+    ats: smartrecruiters
+    slug: kearney
+
+  - name: LEK Consulting
+    ats: smartrecruiters
+    slug: lekconsulting
+
+  - name: Strategy&
+    ats: smartrecruiters
+    slug: strategy
+
+  - name: Slalom
+    ats: smartrecruiters
+    slug: slalom
+
+  - name: Thoughtworks
+    ats: greenhouse
+    slug: thoughtworks
+
+  - name: Versent
+    ats: smartrecruiters
+    slug: versent
+
+  - name: Servian
+    ats: lever
+    slug: servian
+
+  - name: Cognizant
+    ats: smartrecruiters
+    slug: cognizant
+
+  - name: Infosys
+    ats: smartrecruiters
+    slug: infosys
+
+  - name: Tata Consultancy Services
+    ats: smartrecruiters
+    slug: tataconsultancyservices
+
+  - name: Wipro
+    ats: smartrecruiters
+    slug: wipro
+
+  - name: Tech Mahindra
+    ats: smartrecruiters
+    slug: techmahindra
+
+  - name: HCLTech
+    ats: smartrecruiters
+    slug: hcltech
+
+  - name: NTT Data
+    ats: smartrecruiters
+    slug: nttdata
+
+  - name: DXC Technology
+    ats: smartrecruiters
+    slug: dxctechnology
+
+  - name: Datacom
+    ats: smartrecruiters
+    slug: datacom
+
+  - name: CGI
+    ats: smartrecruiters
+    slug: cgi
+
+  - name: Sopra Steria
+    ats: smartrecruiters
+    slug: soprasteria
+
+  - name: Nous Group
+    ats: greenhouse
+    slug: nousgroup
+
+  - name: Partners in Performance
+    ats: smartrecruiters
+    slug: partnersinperformance
+
+  - name: Synergy Group
+    ats: smartrecruiters
+    slug: synergygroup
+
+  - name: Arq Group
+    ats: smartrecruiters
+    slug: arqgroup
+
+  - name: Telstra Purple
+    ats: smartrecruiters
+    slug: telstrapurple
+
+  - name: Deloitte Digital
+    ats: smartrecruiters
+    slug: deloittedigital
+
+  - name: Akkodis
+    ats: smartrecruiters
+    slug: akkodis
+
+  - name: Modis
+    ats: smartrecruiters
+    slug: modis
+
+  - name: Avanade
+    ats: smartrecruiters
+    slug: avanade
+
+  - name: Insight Enterprises
+    ats: smartrecruiters
+    slug: insightenterprises
+
+  - name: Kinetic IT
+    ats: smartrecruiters
+    slug: kineticit
+
+  - name: Interactive
+    ats: smartrecruiters
+    slug: interactive
+
+  - name: Data#3
+    ats: smartrecruiters
+    slug: data3
+
+  - name: Atturra
+    ats: smartrecruiters
+    slug: atturra
+
+  - name: FinXL
+    ats: smartrecruiters
+    slug: finxl
+
+  - name: Paxus
+    ats: smartrecruiters
+    slug: paxus
+
+  - name: Talent International
+    ats: smartrecruiters
+    slug: talentinternational
+
+  - name: The Missing Link
+    ats: smartrecruiters
+    slug: themissinglink
+
+  - name: CMD Solutions
+    ats: smartrecruiters
+    slug: cmdsolutions
+
+  - name: Cevo
+    ats: smartrecruiters
+    slug: cevo
+
+  - name: Itoc
+    ats: smartrecruiters
+    slug: itoc
+
+  - name: Cuscal
+    ats: smartrecruiters
+    slug: cuscal
+
+  - name: Innablr
+    ats: lever
+    slug: innablr
+
+  - name: Contino
+    ats: smartrecruiters
+    slug: contino
+
+  - name: Kasna
+    ats: smartrecruiters
+    slug: kasna
+
+  - name: CMD
+    ats: smartrecruiters
+    slug: cmd
+
+  - name: Servian Data
+    ats: smartrecruiters
+    slug: serviandata
+
+  - name: Aginic
+    ats: smartrecruiters
+    slug: aginic
+
+  - name: The Data Foundry
+    ats: smartrecruiters
+    slug: thedatafoundry
+
+  - name: Cuusoo
+    ats: smartrecruiters
+    slug: cuusoo
+
+  - name: Notitia
+    ats: smartrecruiters
+    slug: notitia
+
+  - name: Biarri
+    ats: smartrecruiters
+    slug: biarri
+
+  - name: Taysols
+    ats: smartrecruiters
+    slug: taysols
+
+  - name: Altis Consulting
+    ats: smartrecruiters
+    slug: altisconsulting
+
+  - name: Decision Inc
+    ats: smartrecruiters
+    slug: decisioninc
+
+  - name: Keytree
+    ats: smartrecruiters
+    slug: keytree
+
+  - name: RXP Group
+    ats: smartrecruiters
+    slug: rxpgroup
+
+  - name: Industrie&Co
+    ats: smartrecruiters
+    slug: industrieco
+
+  - name: Palo IT
+    ats: greenhouse
+    slug: paloit
+
+  - name: Cprime
+    ats: lever
+    slug: cprime
+
+  - name: Elabor8
+    ats: smartrecruiters
+    slug: elabor8
+
+  - name: Pragmateam
+    ats: smartrecruiters
+    slug: pragmateam
+
+  - name: Everest Engineering
+    ats: smartrecruiters
+    slug: everestengineering
+
+  - name: DiUS
+    ats: smartrecruiters
+    slug: dius
+
+  - name: Shine Solutions
+    ats: smartrecruiters
+    slug: shinesolutions
+
+  - name: Bilue
+    ats: smartrecruiters
+    slug: bilue
+
+  - name: Itty Bitty Apps
+    ats: smartrecruiters
+    slug: ittybittyapps
+
+  - name: Outware Mobile
+    ats: smartrecruiters
+    slug: outwaremobile
+
+  - name: WorkingMouse
+    ats: smartrecruiters
+    slug: workingmouse
+
+  - name: Codebots
+    ats: smartrecruiters
+    slug: codebots
+
+  - name: Readify
+    ats: smartrecruiters
+    slug: readify
+
+  - name: Telstra Health
+    ats: smartrecruiters
+    slug: telstrahealth
+
+  - name: CyberCX
+    ats: smartrecruiters
+    slug: cybercx
+
+  - name: Tesserent
+    ats: smartrecruiters
+    slug: tesserent
+
+  - name: Secure Code Warrior
+    ats: lever
+    slug: securecodewarrior
+
+  - name: Penten
+    ats: smartrecruiters
+    slug: penten
+
+  - name: Sekuro
+    ats: smartrecruiters
+    slug: sekuro
+
+  - name: Triskele Labs
+    ats: smartrecruiters
+    slug: triskelelabs
+
+  - name: Internet 2.0
+    ats: smartrecruiters
+    slug: internet20
+
+  - name: Phriendly Phishing
+    ats: smartrecruiters
+    slug: phriendlyphishing
+  - name: Lyrebird Health
+    ats: lever
+    slug: lyrebirdhealth
+
+  - name: Bugcrowd
+    ats: greenhouse
+    slug: bugcrowd
+
+  - name: MongoDB
+    ats: greenhouse
+    slug: mongodb
+
+  - name: Kasada
+    ats: lever
+    slug: kasada
+
+  - name: Canva
+    ats: smartrecruiters
+    slug: canva
+
+  - name: Quantium
+    ats: greenhouse
+    slug: quantium
+
+  - name: Databricks
+    ats: greenhouse
+    slug: databricks
+
+  - name: Immutable
+    ats: lever
+    slug: immutable
+
+  - name: WiseTech Global
+    ats: smartrecruiters
+    slug: wisetechglobal
+
+  - name: Xero
+    ats: ashby
+    slug: xero
+
+  - name: Deputy
+    ats: lever
+    slug: deputy
+
+  - name: Culture Amp
+    ats: greenhouse
+    slug: cultureamp
+
+  - name: Dovetail
+    ats: ashby
+    slug: dovetail
+
+  - name: SiteMinder
+    ats: ashby
+    slug: siteminder
+
+  - name: Airtasker
+    ats: ashby
+    slug: airtasker
+
+  - name: Finder
+    ats: workable
+    slug: finder
+
+  - name: Rokt
+    ats: ashby
+    slug: rokt
+
+  - name: Eucalyptus
+    ats: greenhouse
+    slug: eucalyptus
+
+  - name: Prospa
+    ats: greenhouse
+    slug: prospa
+
+  - name: Brighte
+    ats: lever
+    slug: brighte
+
+  - name: Zip Co
+    ats: ashby
+    slug: zip
+
+  - name: Block
+    ats: greenhouse
+    slug: block
+
+  - name: Octopus Deploy
+    ats: greenhouse
+    slug: octopusdeploy
+
+  - name: Buildkite
+    ats: greenhouse
+    slug: buildkite
+
+  - name: Nearmap
+    ats: smartrecruiters
+    slug: nearmap
+
+  - name: Swoop Aero
+    ats: ashby
+    slug: swoop
+
+  - name: Mable
+    ats: lever
+    slug: mable
+
+  - name: Vow
+    ats: ashby
+    slug: vow
+
+  - name: InDebted
+    ats: lever
+    slug: indebted
+
+  - name: Karbon
+    ats: greenhouse
+    slug: karbon
+
+  - name: Ignition
+    ats: greenhouse
+    slug: ignition
+
+  - name: Education Perfect
+    ats: greenhouse
+    slug: education
+
+  - name: Splose
+    ats: ashby
+    slug: splose
+
+  - name: Lumos Diagnostics
+    ats: ashby
+    slug: lumos
+
+  - name: ResMed
+    ats: smartrecruiters
+    slug: resmed
+
+  - name: PEXA
+    ats: lever
+    slug: pexa
+
+  - name: LEAP Legal Software
+    ats: workable
+    slug: leap-legal-software
+
+  - name: Immutable Systems
+    ats: lever
+    slug: immutable
+
+  - name: Judo Bank
+    ats: smartrecruiters
+    slug: judobank
+
+  - name: Up Bank
+    ats: greenhouse
+    slug: up
+
+  - name: Ferocia
+    ats: greenhouse
+    slug: ferocia
+
+  - name: Wise
+    ats: smartrecruiters
+    slug: wise
+
+  - name: Stripe
+    ats: greenhouse
+    slug: stripe
+
+  - name: Airwallex
+    ats: ashby
+    slug: airwallex
+
+  - name: Independent Reserve
+    ats: greenhouse
+    slug: independent
+
+  - name: Block Earner
+    ats: greenhouse
+    slug: block
+
+  - name: Maple Finance
+    ats: ashby
+    slug: maple
+
+  - name: CoinJar
+    ats: smartrecruiters
+    slug: coinjar
+
+  - name: FinClear
+    ats: smartrecruiters
+    slug: finclear
+
+  - name: Netwealth
+    ats: ashby
+    slug: netwealth
+
+  - name: Tiger Brokers
+    ats: ashby
+    slug: tiger
+
+  - name: Solana Labs
+    ats: ashby
+    slug: solanalabs
+
+  - name: Phantom
+    ats: ashby
+    slug: phantom
+
+  - name: Helius
+    ats: ashby
+    slug: helius
+
+  - name: Jito Labs
+    ats: lever
+    slug: jito
+
+  - name: Squads
+    ats: ashby
+    slug: squads
+
+  - name: Pyth Network
+    ats: ashby
+    slug: pythnetwork
+
+  - name: Magic Eden
+    ats: ashby
+    slug: magiceden
+
+  - name: Consensys
+    ats: greenhouse
+    slug: consensys
+
+  - name: Alchemy
+    ats: ashby
+    slug: alchemy
+
+  - name: QuickNode
+    ats: ashby
+    slug: quicknode
+
+  - name: Ledger
+    ats: lever
+    slug: ledger
+
+  - name: Fireblocks
+    ats: greenhouse
+    slug: fireblocks
+
+  - name: Ripple
+    ats: greenhouse
+    slug: ripple
+
+  - name: Uniswap Labs
+    ats: ashby
+    slug: uniswap
+
+  - name: OpenSea
+    ats: ashby
+    slug: opensea
+
+  - name: Polygon Labs
+    ats: ashby
+    slug: polygon-labs
+
+  - name: Offchain Labs
+    ats: lever
+    slug: offchainlabs
+
+  - name: Matter Labs
+    ats: ashby
+    slug: matter-labs
+
+  - name: Oliver Wyman
+    ats: lever
+    slug: oliverwyman
+
+  - name: Thoughtworks
+    ats: greenhouse
+    slug: thoughtworks
+
+  - name: Versent
+    ats: smartrecruiters
+    slug: versent
+
+  - name: Nous Group
+    ats: greenhouse
+    slug: nousgroup
+
+  - name: Arq Group
+    ats: ashby
+    slug: arq
+
+  - name: Kinetic IT
+    ats: ashby
+    slug: kinetic
+
+  - name: Talent International
+    ats: greenhouse
+    slug: talent
+
+  - name: CMD Solutions
+    ats: smartrecruiters
+    slug: cmd
+
+  - name: CMD
+    ats: smartrecruiters
+    slug: cmd
+
+  - name: The Data Foundry
+    ats: smartrecruiters
+    slug: thedatafoundry
+
+  - name: Altis Consulting
+    ats: ashby
+    slug: altis
+
+  - name: Palo IT
+    ats: greenhouse
+    slug: paloit
+
+  - name: Cprime
+    ats: lever
+    slug: cprime
+
+  - name: Bilue
+    ats: smartrecruiters
+    slug: bilue
+
+  - name: CyberCX
+    ats: smartrecruiters
+    slug: cybercx
+
+  - name: Secure Code Warrior
+    ats: lever
+    slug: securecodewarrior
+
+  - name: Shearwater Solutions
+    ats: greenhouse
+    slug: shearwater
+
+  - name: Gridware
+    ats: lever
+    slug: gridware
+
+  - name: Tide Foundation
+    ats: greenhouse
+    slug: tide
+
+  - name: ServiceNow
+    ats: smartrecruiters
+    slug: servicenow
+
+  - name: Snowflake
+    ats: ashby
+    slug: snowflake
+
+  - name: Datadog
+    ats: greenhouse
+    slug: datadog
+
+  - name: Elastic
+    ats: greenhouse
+    slug: elastic
+
+  - name: Confluent
+    ats: ashby
+    slug: confluent
+
+  - name: GitLab
+    ats: greenhouse
+    slug: gitlab
+
+  - name: Figma
+    ats: greenhouse
+    slug: figma
+
+  - name: Notion
+    ats: ashby
+    slug: notion
+
+  - name: Twilio
+    ats: greenhouse
+    slug: twilio
+
+  - name: Okta
+    ats: greenhouse
+    slug: okta
+
+  - name: Zscaler
+    ats: greenhouse
+    slug: zscaler
+
+  - name: Cloudflare
+    ats: greenhouse
+    slug: cloudflare
+
+  - name: Fastly
+    ats: greenhouse
+    slug: fastly
+
+  - name: New Relic
+    ats: greenhouse
+    slug: newrelic
+
+  - name: PagerDuty
+    ats: greenhouse
+    slug: pagerduty
+
+  - name: LaunchDarkly
+    ats: greenhouse
+    slug: launchdarkly
+
+  - name: Vercel
+    ats: greenhouse
+    slug: vercel
+
+  - name: Netlify
+    ats: greenhouse
+    slug: netlify
+
+  - name: Pure Storage
+    ats: greenhouse
+    slug: purestorage
+
+  - name: Uber
+    ats: smartrecruiters
+    slug: uber
+
+  - name: Airbnb
+    ats: greenhouse
+    slug: airbnb
+
+  - name: Agoda
+    ats: greenhouse
+    slug: agoda
+
+  - name: TripAdvisor
+    ats: greenhouse
+    slug: tripadvisor
+
+  - name: LinkedIn
+    ats: greenhouse
+    slug: linkedin
+
+  - name: Pinterest
+    ats: greenhouse
+    slug: pinterest
+
+  - name: Reddit
+    ats: greenhouse
+    slug: reddit
+
+  - name: Spotify
+    ats: lever
+    slug: spotify
+
+  - name: Roblox
+    ats: greenhouse
+    slug: roblox
+
+  - name: Epic Games
+    ats: greenhouse
+    slug: epicgames
+
+  - name: Light and Wonder
+    ats: ashby
+    slug: light
+
+  - name: Mighty Kingdom
+    ats: greenhouse
+    slug: mighty
+
+  - name: OpenAI
+    ats: ashby
+    slug: openai
+
+  - name: Anthropic
+    ats: greenhouse
+    slug: anthropic
+
+  - name: Scale AI
+    ats: greenhouse
+    slug: scaleai
+
+  - name: Hugging Face
+    ats: workable
+    slug: huggingface
+
+  - name: Cohere
+    ats: ashby
+    slug: cohere
+
+  - name: Mistral AI
+    ats: lever
+    slug: mistral
+
+  - name: Perplexity
+    ats: ashby
+    slug: perplexity
+
+  - name: Writer
+    ats: ashby
+    slug: writer
+
+  - name: Glean
+    ats: smartrecruiters
+    slug: glean
+
+  - name: Harvey
+    ats: ashby
+    slug: harvey
+
+  - name: Insurance Australia Group
+    ats: greenhouse
+    slug: insurance
+
+  - name: Goodman Group
+    ats: greenhouse
+    slug: goodman
+
+  - name: Seek
+    ats: smartrecruiters
+    slug: seek
+
+  - name: Carsales
+    ats: smartrecruiters
+    slug: carsales
+
+  - name: Australia Post
+    ats: ashby
+    slug: post
+
+  - name: Expeditors
+    ats: smartrecruiters
+    slug: expeditors
+
+  - name: Flexport
+    ats: greenhouse
+    slug: flexport
+
+  - name: Visa Global Logistics
+    ats: smartrecruiters
+    slug: visa
+
+  - name: Toll People
+    ats: smartrecruiters
+    slug: tollpeople
+
+  - name: Blue Yonder
+    ats: lever
+    slug: blue
+
+  - name: Coupa
+    ats: lever
+    slug: coupa
+
+  - name: Ivalua
+    ats: greenhouse
+    slug: ivalua
+
+  - name: Project44
+    ats: greenhouse
+    slug: project44
+
+  - name: FourKites
+    ats: greenhouse
+    slug: fourkites
+
+  - name: Shippeo
+    ats: smartrecruiters
+    slug: shippeo
+
+  - name: Locus Robotics
+    ats: greenhouse
+    slug: locusrobotics
+
+  - name: Bringg
+    ats: greenhouse
+    slug: bringg
+
+  - name: Uber Freight
+    ats: greenhouse
+    slug: uberfreight
+
+  - name: Easyship
+    ats: greenhouse
+    slug: easyship
+
+  - name: Anchanto
+    ats: greenhouse
+    slug: anchanto
+
+  - name: Cin7
+    ats: lever
+    slug: cin7
+
+  - name: Procurify
+    ats: ashby
+    slug: procurify
+
+  - name: Felix
+    ats: ashby
+    slug: felix
+
+  - name: Harvey Norman
+    ats: ashby
+    slug: harvey
+
+  - name: The Iconic
+    ats: greenhouse
+    slug: theiconic
+
+  - name: Super Retail Group
+    ats: greenhouse
+    slug: super
+
+  - name: Cotton On Group
+    ats: smartrecruiters
+    slug: cottonon
+
+  - name: Goodman Fielder
+    ats: greenhouse
+    slug: goodman
+
+  - name: Endava
+    ats: smartrecruiters
+    slug: endava
+
+  - name: Remote
+    ats: greenhouse
+    slug: remote
+
+  - name: Deel
+    ats: ashby
+    slug: deel
+
+  - name: Gusto
+    ats: greenhouse
+    slug: gusto
+
+  - name: Brex
+    ats: greenhouse
+    slug: brex
+
+  - name: Ramp
+    ats: ashby
+    slug: ramp
+
+  - name: Plaid
+    ats: ashby
+    slug: plaid
+
+  - name: Coinbase
+    ats: greenhouse
+    slug: coinbase
+
+  - name: Gemini
+    ats: greenhouse
+    slug: gemini
+
+  - name: OKX
+    ats: greenhouse
+    slug: okx
+
+  - name: Binance
+    ats: lever
+    slug: binance
+
+  - name: Robinhood
+    ats: greenhouse
+    slug: robinhood
+
+  - name: Wealthsimple
+    ats: ashby
+    slug: wealthsimple
+
+  - name: Monzo
+    ats: greenhouse
+    slug: monzo
+
+  - name: N26
+    ats: greenhouse
+    slug: n26
+
+  - name: Adyen
+    ats: greenhouse
+    slug: adyen
+
+  - name: Marqeta
+    ats: greenhouse
+    slug: marqeta
+
+  - name: Galileo
+    ats: greenhouse
+    slug: galileo
+
+  - name: Thought Machine
+    ats: ashby
+    slug: thought-machine
+
+  - name: Nuvei
+    ats: workable
+    slug: nuvei
+
+  - name: Megaport
+    ats: lever
+    slug: megaport
+
+  - name: NextDC
+    ats: smartrecruiters
+    slug: nextdc
+
+  - name: Objective Corporation
+    ats: lever
+    slug: objective
+
+  - name: Sandstone Technology
+    ats: ashby
+    slug: sandstone
+
+  - name: Change Financial
+    ats: ashby
+    slug: change
+
+  - name: Experian Australia
+    ats: smartrecruiters
+    slug: experian
+

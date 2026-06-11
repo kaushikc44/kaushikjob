@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
 """
-discover.py — find which ATS a company uses, at scale.
+discover.py (v2) — find which ATS a company uses, at scale.
 
-Give it a plain text file of company names (one per line) — e.g. exported from
-your Notion job tracker — and it probes every ATS API with slug guesses,
-then prints ready-to-paste YAML for companies.yaml.
+Fixes vs v1:
+- SmartRecruiters returns 200 + empty results for ANY name (even fake ones),
+  which caused mass false positives. All probes now require >= 1 live posting.
+- Output shows the live posting count per hit so you can sanity-check.
 
 Usage:
     python discover.py companies.txt >> companies.yaml
@@ -26,37 +27,58 @@ def slug_guesses(name):
     no_space = base.replace(" ", "")
     hyphen = base.replace(" ", "-")
     guesses = [no_space, hyphen]
-    # drop common suffixes: "Canva Pty Ltd" -> "canva"
-    stripped = re.sub(r"\b(pty|ltd|inc|group|limited|technologies|technology|labs|co)\b", "", base).strip()
+    stripped = re.sub(r"\b(pty|ltd|inc|group|limited|technologies|technology|labs|co|australia)\b", "", base).strip()
     if stripped and stripped != base:
         guesses += [stripped.replace(" ", ""), stripped.replace(" ", "-")]
-    # first word only: "Atlassian Corporation" -> "atlassian"
     first = base.split(" ")[0]
-    if first not in guesses:
+    if first and first not in guesses:
         guesses.append(first)
     return list(dict.fromkeys(g for g in guesses if g))
 
 
 def probe(ats, slug):
+    """Returns the number of live postings (0 = not found / no signal)."""
     try:
         if ats == "greenhouse":
             r = SESSION.get(f"https://boards-api.greenhouse.io/v1/boards/{slug}/jobs", timeout=TIMEOUT)
-            return r.status_code == 200 and "jobs" in r.json()
+            if r.status_code != 200:
+                return 0
+            return len(r.json().get("jobs", []))
+
         if ats == "lever":
-            r = SESSION.get(f"https://api.lever.co/v0/postings/{slug}?mode=json&limit=1", timeout=TIMEOUT)
-            return r.status_code == 200 and isinstance(r.json(), list)
+            r = SESSION.get(f"https://api.lever.co/v0/postings/{slug}?mode=json", timeout=TIMEOUT)
+            if r.status_code != 200:
+                return 0
+            data = r.json()
+            return len(data) if isinstance(data, list) else 0
+
         if ats == "ashby":
             r = SESSION.get(f"https://api.ashbyhq.com/posting-api/job-board/{slug}", timeout=TIMEOUT)
-            return r.status_code == 200 and "jobs" in r.json()
+            if r.status_code != 200:
+                return 0
+            return len(r.json().get("jobs", []))
+
         if ats == "smartrecruiters":
-            r = SESSION.get(f"https://api.smartrecruiters.com/v1/companies/{slug}/postings?limit=1", timeout=TIMEOUT)
-            return r.status_code == 200 and "content" in r.json()
+            # NB: this API returns 200 + empty for ANY name — count is the only real signal
+            r = SESSION.get(
+                f"https://api.smartrecruiters.com/v1/companies/{slug}/postings?limit=1",
+                timeout=TIMEOUT,
+            )
+            if r.status_code != 200:
+                return 0
+            return int(r.json().get("totalFound", 0))
+
         if ats == "workable":
-            r = SESSION.get(f"https://apply.workable.com/api/v1/widget/accounts/{slug}?details=false", timeout=TIMEOUT)
-            return r.status_code == 200 and "jobs" in r.json()
+            r = SESSION.get(
+                f"https://apply.workable.com/api/v1/widget/accounts/{slug}?details=false",
+                timeout=TIMEOUT,
+            )
+            if r.status_code != 200:
+                return 0
+            return len(r.json().get("jobs", []))
     except Exception:
-        return False
-    return False
+        return 0
+    return 0
 
 
 ATS_ORDER = ["greenhouse", "lever", "ashby", "smartrecruiters", "workable"]
@@ -74,8 +96,9 @@ def main():
         hit = None
         for slug in slug_guesses(name):
             for ats in ATS_ORDER:
-                if probe(ats, slug):
-                    hit = (ats, slug)
+                count = probe(ats, slug)
+                if count > 0:
+                    hit = (ats, slug, count)
                     break
             if hit:
                 break
@@ -83,12 +106,12 @@ def main():
         if hit:
             found += 1
             print(f"  - name: {name}\n    ats: {hit[0]}\n    slug: {hit[1]}\n")
-            print(f"✓ {name} -> {hit[0]}/{hit[1]}", file=sys.stderr)
+            print(f"OK {name} -> {hit[0]}/{hit[1]} ({hit[2]} live postings)", file=sys.stderr)
         else:
             missed.append(name)
-            print(f"✗ {name} (likely Workday/SuccessFactors/PageUp — check careers page manually)", file=sys.stderr)
+            print(f"MISS {name} (no live board found — likely Workday/SuccessFactors/PageUp or zero open roles)", file=sys.stderr)
 
-    print(f"\nFound {found}/{len(names)}. Missed: {', '.join(missed) or 'none'}", file=sys.stderr)
+    print(f"\nFound {found}/{len(names)}. Missed {len(missed)}: {', '.join(missed) or 'none'}", file=sys.stderr)
 
 
 if __name__ == "__main__":
