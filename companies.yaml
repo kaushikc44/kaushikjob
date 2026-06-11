@@ -1,0 +1,70 @@
+# Job Sniper config
+# ats options: greenhouse | lever | ashby | smartrecruiters | workable | workday
+#
+# Finding a company's slug (takes ~30 seconds):
+#   - Open the company's careers page, view a job posting, look at the URL:
+#       boards.greenhouse.io/<slug>          -> greenhouse
+#       jobs.lever.co/<slug>                 -> lever
+#       jobs.ashbyhq.com/<slug>              -> ashby
+#       jobs.smartrecruiters.com/<slug>/...  -> smartrecruiters
+#       apply.workable.com/<slug>            -> workable
+#       <tenant>.wd3.myworkdayjobs.com/<site> -> workday (slug = "tenant/site/host")
+#
+# Per-company include/exclude/locations override the global filters below.
+
+filters:
+  include:
+    - software engineer
+    - software developer
+    - backend
+    - full stack
+    - fullstack
+    - data analyst
+    - data engineer
+    - graduate
+    - junior
+    - cyber
+    - security analyst
+  exclude:
+    - senior
+    - staff
+    - principal
+    - lead
+    - manager
+    - director
+    - head of
+  locations:
+    - sydney
+    - australia
+    - remote
+
+companies:
+  # ⚠️ Verify each slug before relying on it — companies migrate ATS platforms.
+  # Run `python watcher.py` locally once; failures print to stderr.
+
+  - name: Canva
+    ats: lever
+    slug: canva
+
+  - name: Atlassian
+    ats: greenhouse
+    slug: atlassian
+
+  - name: SafetyCulture
+    ats: lever
+    slug: safetyculture
+
+  - name: Airwallex
+    ats: lever
+    slug: airwallex
+
+  - name: Immutable
+    ats: lever
+    slug: immutable
+
+  # Workday example (slug = tenant/site/host — check a job URL to confirm):
+  # - name: Commonwealth Bank
+  #   ats: workday
+  #   slug: cba/CommBank_Careers/cba.wd3.myworkdayjobs.com
+
+  # Add as many as you want — each poll cycle handles dozens easily.
