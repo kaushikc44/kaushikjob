@@ -1,3 +1,10 @@
+## Also in this repo: [Hermes Agent](hermes/README.md) 🪽
+A general-purpose personal agent (Claude + tool use) that runs 24/7 via the
+same GitHub Actions cron pattern as Job Sniper below, and takes instructions
+from a mobile PWA you install on your phone. See [`hermes/README.md`](hermes/README.md).
+
+---
+
 # Job Sniper 🎯
 
 Get pinged on your phone the **moment** a job goes live on a company's career site — before it hits LinkedIn, Seek, or Indeed.

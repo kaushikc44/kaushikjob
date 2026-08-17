@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Hermes Agent</title>
+<link rel="manifest" href="./manifest.json">
+<link rel="icon" href="./icon.svg">
+<link rel="apple-touch-icon" href="./icon.svg">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+<meta name="theme-color" content="#0b0f19">
+<style>
+  :root {
+    --bg: #0b0f19;
+    --panel: #131a2a;
+    --border: #232c40;
+    --text: #e7ecf5;
+    --muted: #8a93a6;
+    --accent: #7dd3fc;
+    --ok: #4ade80;
+    --err: #f87171;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; padding: 0; background: var(--bg); color: var(--text); }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+    padding: env(safe-area-inset-top) env(safe-area-inset-right) env(safe-area-inset-bottom) env(safe-area-inset-left);
+    min-height: 100vh;
+  }
+  header {
+    display: flex; align-items: center; gap: 10px;
+    padding: 16px; border-bottom: 1px solid var(--border);
+    position: sticky; top: 0; background: var(--bg); z-index: 5;
+  }
+  header img { width: 28px; height: 28px; border-radius: 7px; }
+  header h1 { font-size: 18px; margin: 0; flex: 1; }
+  #status-dot { width: 9px; height: 9px; border-radius: 50%; background: var(--muted); }
+  #status-dot.ok { background: var(--ok); }
+  #status-dot.err { background: var(--err); }
+  button.icon-btn {
+    background: none; border: none; color: var(--muted); font-size: 18px; padding: 6px; cursor: pointer;
+  }
+  main { max-width: 640px; margin: 0 auto; padding: 16px; }
+  .card {
+    background: var(--panel); border: 1px solid var(--border); border-radius: 14px;
+    padding: 14px; margin-bottom: 16px;
+  }
+  textarea {
+    width: 100%; min-height: 84px; resize: vertical;
+    background: #0e1524; color: var(--text); border: 1px solid var(--border);
+    border-radius: 10px; padding: 10px; font-size: 15px; font-family: inherit;
+  }
+  textarea:focus { outline: 1px solid var(--accent); }
+  .row { display: flex; gap: 8px; margin-top: 10px; }
+  button.primary {
+    flex: 1; background: var(--accent); color: #0b0f19; border: none; border-radius: 10px;
+    padding: 12px; font-size: 15px; font-weight: 600; cursor: pointer;
+  }
+  button.primary:disabled { opacity: 0.5; }
+  button.secondary {
+    background: transparent; color: var(--text); border: 1px solid var(--border);
+    border-radius: 10px; padding: 12px 14px; font-size: 15px; cursor: pointer;
+  }
+  #hint { color: var(--muted); font-size: 13px; margin-top: 8px; }
+  h2 { font-size: 14px; text-transform: uppercase; letter-spacing: 0.05em; color: var(--muted); margin: 24px 0 10px; }
+  .entry {
+    border-bottom: 1px solid var(--border); padding: 10px 0; font-size: 14px;
+  }
+  .entry:last-child { border-bottom: none; }
+  .entry .meta { color: var(--muted); font-size: 12px; margin-bottom: 4px; display: flex; gap: 8px; }
+  .badge { border-radius: 6px; padding: 1px 6px; font-size: 11px; }
+  .badge.task { background: #16324a; color: var(--accent); }
+  .badge.error { background: #3a1a1a; color: var(--err); }
+  .entry .summary { font-weight: 500; }
+  .entry .detail { color: var(--muted); margin-top: 4px; white-space: pre-wrap; }
+  #empty, #loading { color: var(--muted); font-size: 14px; padding: 8px 0; }
+  dialog {
+    border: 1px solid var(--border); border-radius: 14px; background: var(--panel); color: var(--text);
+    width: min(420px, 90vw); padding: 18px;
+  }
+  dialog::backdrop { background: rgba(0,0,0,0.6); }
+  dialog label { display: block; font-size: 13px; color: var(--muted); margin: 12px 0 4px; }
+  dialog input {
+    width: 100%; background: #0e1524; color: var(--text); border: 1px solid var(--border);
+    border-radius: 8px; padding: 10px; font-size: 14px;
+  }
+  dialog .row { justify-content: flex-end; }
+</style>
+</head>
+<body>
+
+<header>
+  <img src="./icon.svg" alt="">
+  <h1>Hermes</h1>
+  <span id="status-dot" title="connection status"></span>
+  <button class="icon-btn" id="settings-btn" title="Settings" aria-label="Settings">⚙</button>
+</header>
+
+<main>
+  <div class="card">
+    <textarea id="task-input" placeholder="Tell Hermes what to do... (it runs within ~15 min, on the next agent cycle)"></textarea>
+    <div class="row">
+      <button class="primary" id="send-btn">Send to agent</button>
+      <button class="secondary" id="refresh-btn" title="Refresh log">↻</button>
+    </div>
+    <div id="hint"></div>
+  </div>
+
+  <h2>Recent activity</h2>
+  <div id="loading">Loading…</div>
+  <div id="empty" style="display:none">Nothing yet. Send an instruction above, or configure the agent in Settings.</div>
+  <div class="card" id="log" style="display:none"></div>
+</main>
+
+<dialog id="settings-dialog">
+  <h2 style="margin-top:0">Settings</h2>
+  <label for="api-base">Agent API URL</label>
+  <input id="api-base" placeholder="https://xxxx.supabase.co/functions/v1/hermes-api">
+  <label for="api-secret">Shared secret</label>
+  <input id="api-secret" type="password" placeholder="HERMES_SHARED_SECRET">
+  <div class="row">
+    <button class="secondary" id="settings-cancel">Cancel</button>
+    <button class="primary" id="settings-save">Save</button>
+  </div>
+</dialog>
+
+<script>
+const $ = (id) => document.getElementById(id);
+const store = {
+  get base() { return localStorage.getItem("hermes_api_base") || ""; },
+  get secret() { return localStorage.getItem("hermes_api_secret") || ""; },
+  save(base, secret) {
+    localStorage.setItem("hermes_api_base", base.replace(/\/+$/, ""));
+    localStorage.setItem("hermes_api_secret", secret);
+  },
+};
+
+function configured() { return Boolean(store.base && store.secret); }
+
+async function api(path, opts = {}) {
+  const res = await fetch(store.base + path, {
+    ...opts,
+    headers: { "Content-Type": "application/json", "x-hermes-secret": store.secret, ...(opts.headers || {}) },
+  });
+  const data = await res.json().catch(() => ({}));
+  if (!res.ok) throw new Error(data.error || `HTTP ${res.status}`);
+  return data;
+}
+
+function fmtTime(iso) {
+  try { return new Date(iso).toLocaleString(undefined, { month: "short", day: "numeric", hour: "numeric", minute: "2-digit" }); }
+  catch { return iso; }
+}
+
+function renderLog(entries) {
+  const log = $("log"), empty = $("empty"), loading = $("loading");
+  loading.style.display = "none";
+  if (!entries.length) { log.style.display = "none"; empty.style.display = "block"; return; }
+  empty.style.display = "none";
+  log.style.display = "block";
+  log.innerHTML = entries.map((e) => `
+    <div class="entry">
+      <div class="meta">
+        <span class="badge ${e.kind === "error" ? "error" : "task"}">${e.kind}</span>
+        <span>${fmtTime(e.created_at)}</span>
+      </div>
+      <div class="summary">${escapeHtml(e.summary || "")}</div>
+      ${e.detail ? `<div class="detail">${escapeHtml(e.detail)}</div>` : ""}
+    </div>
+  `).join("");
+}
+
+function escapeHtml(s) {
+  return s.replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+}
+
+async function loadLog() {
+  if (!configured()) {
+    $("loading").style.display = "none";
+    $("empty").textContent = "Set up the agent connection in Settings (⚙) first.";
+    $("empty").style.display = "block";
+    $("status-dot").className = "";
+    return;
+  }
+  $("loading").style.display = "block";
+  try {
+    const data = await api("/log?limit=30");
+    renderLog(data.log || []);
+    $("status-dot").className = "ok";
+  } catch (e) {
+    $("loading").style.display = "none";
+    $("empty").textContent = `Couldn't reach the agent: ${e.message}`;
+    $("empty").style.display = "block";
+    $("status-dot").className = "err";
+  }
+}
+
+async function sendTask() {
+  const input = $("task-input");
+  const content = input.value.trim();
+  const hint = $("hint");
+  if (!content) return;
+  if (!configured()) { openSettings(); return; }
+
+  $("send-btn").disabled = true;
+  hint.textContent = "Sending…";
+  try {
+    await api("/task", { method: "POST", body: JSON.stringify({ content }) });
+    input.value = "";
+    hint.textContent = "Sent. Hermes checks for new tasks roughly every 15 minutes.";
+    setTimeout(loadLog, 1000);
+  } catch (e) {
+    hint.textContent = `Failed: ${e.message}`;
+  } finally {
+    $("send-btn").disabled = false;
+  }
+}
+
+function openSettings() {
+  $("api-base").value = store.base;
+  $("api-secret").value = store.secret;
+  $("settings-dialog").showModal();
+}
+
+$("send-btn").addEventListener("click", sendTask);
+$("task-input").addEventListener("keydown", (e) => {
+  if (e.key === "Enter" && (e.metaKey || e.ctrlKey)) sendTask();
+});
+$("refresh-btn").addEventListener("click", loadLog);
+$("settings-btn").addEventListener("click", openSettings);
+$("settings-cancel").addEventListener("click", () => $("settings-dialog").close());
+$("settings-save").addEventListener("click", () => {
+  store.save($("api-base").value.trim(), $("api-secret").value.trim());
+  $("settings-dialog").close();
+  loadLog();
+});
+
+if (!configured()) openSettings();
+loadLog();
+setInterval(loadLog, 60000);
+
+if ("serviceWorker" in navigator) {
+  navigator.serviceWorker.register("./sw.js").catch(() => {});
+}
+</script>
+</body>
+</html>
