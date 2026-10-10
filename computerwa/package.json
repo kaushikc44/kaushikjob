@@ -11,7 +11,11 @@
     "typecheck": "tsc --noEmit",
     "test": "vitest run",
     "seed": "tsx scripts/generate-seed.ts",
-    "e2e:chain": "tsx scripts/chain-smoke-test.ts"
+    "e2e:chain": "tsx scripts/chain-smoke-test.ts",
+    "gateway": "tsx gateway/main.ts",
+    "gateway:keys": "tsx gateway/keys-cli.ts",
+    "mock:model": "node scripts/mock-openai-server.mjs",
+    "check:bundle": "node scripts/check-bundle-secrets.mjs"
   },
   "dependencies": {
     "@solana/spl-token": "0.4.14",
@@ -23,7 +27,8 @@
     "next": "14.2.33",
     "react": "18.3.1",
     "react-dom": "18.3.1",
-    "recharts": "2.15.4"
+    "recharts": "2.15.4",
+    "server-only": "0.0.1"
   },
   "devDependencies": {
     "@types/node": "20.17.6",

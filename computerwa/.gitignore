@@ -5,3 +5,6 @@ next-env.d.ts
 *.tsbuildinfo
 .env*.local
 test-ledger
+gateway-data
+gateway/.env
+.env

@@ -5,6 +5,8 @@ import { useRouter, useSearchParams } from "next/navigation";
 import { allocateToHolders, computeDistribution, formatUsd, type Holder, validateInputs } from "@/lib/finance";
 import { getPools, monthLabel, totalOpex } from "@/lib/pools";
 import { usePoolChainState } from "@/lib/solana/useChainState";
+import { hypotheticalPaidRevenue, liveActualInputs } from "@/lib/inference/accounting";
+import { useInferenceStatus } from "@/lib/inference/useInferenceStatus";
 import { CLUSTER } from "@/lib/solana/config";
 import { AddressLink } from "./TxLink";
 
@@ -14,6 +16,14 @@ interface DemoHolder {
   label: string;
   balance: string;
 }
+
+type Scenario = "seed" | "live_actual" | "live_hypothetical";
+
+const SCENARIO_LABEL: Record<Scenario, { text: string; cls: string }> = {
+  seed: { text: "Seeded pool data (fictional)", cls: "bg-fuchsia-500/15 text-fuchsia-300" },
+  live_actual: { text: "Live usage · actual — revenue = recorded payments ($0)", cls: "bg-sky-500/15 text-sky-300" },
+  live_hypothetical: { text: "HYPOTHETICAL paid-inference scenario — not actual revenue", cls: "bg-amber-500/20 text-amber-200" },
+};
 
 const DEFAULT_DEMO: DemoHolder[] = [
   { label: "Demo holder A", balance: "400000" },
@@ -35,6 +45,38 @@ export function Simulator() {
   const [share, setShare] = useState("0");
   const [source, setSource] = useState<"chain" | "demo">("demo");
   const [demo, setDemo] = useState<DemoHolder[]>(DEFAULT_DEMO);
+  const [scenario, setScenario] = useState<Scenario>("seed");
+  const [edited, setEdited] = useState(false);
+  const [priceIn, setPriceIn] = useState("0.10");
+  const [priceOut, setPriceOut] = useState("0.40");
+  const live = useInferenceStatus("30", 0);
+  const liveSummary = live.status?.summary ?? null;
+  const hypo = liveSummary
+    ? hypotheticalPaidRevenue(liveSummary, { usdPerMillionInputTokens: num(priceIn), usdPerMillionOutputTokens: num(priceOut) })
+    : null;
+  const edit = (set: (v: string) => void) => (v: string) => {
+    set(v);
+    setEdited(true);
+  };
+
+  const applyLiveActual = () => {
+    if (!liveSummary) return;
+    const i = liveActualInputs(liveSummary);
+    setRevenue(String(i.revenue));
+    setOpex(String(i.operatingExpenses));
+    setReserve(String(i.reserve));
+    setScenario("live_actual");
+    setEdited(false);
+  };
+  const applyHypothetical = () => {
+    if (!liveSummary || !hypo) return;
+    const i = liveActualInputs(liveSummary);
+    setRevenue(String(Math.round(hypo.revenueUsd * 100) / 100));
+    setOpex(String(i.operatingExpenses));
+    setReserve(String(i.reserve));
+    setScenario("live_hypothetical");
+    setEdited(false);
+  };
 
   const loadMonth = (i: number) => {
     const m = pool.months[i];
@@ -44,12 +86,21 @@ export function Simulator() {
     setOpex(totalOpex(m).toFixed(2));
     setReserve(String(m.reserve));
     setShare(String(pool.holderSharePct));
+    setScenario("seed");
+    setEdited(false);
   };
 
   useEffect(() => {
     loadMonth(pool.months.length - 1);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [pool.id]);
+
+  // Arriving from /inference: start from live actual usage once it loads.
+  const wantsLive = params.get("source") === "live";
+  useEffect(() => {
+    if (wantsLive && liveSummary && scenario === "seed" && !edited) applyLiveActual();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wantsLive, liveSummary]);
 
   useEffect(() => {
     setSource(chain.mintState && chain.mintState.holders.length ? "chain" : "demo");
@@ -108,9 +159,22 @@ export function Simulator() {
             ))}
           </select>
         </div>
-        <MoneyInput id="revenue" label="Monthly revenue (USD)" value={revenue} onChange={setRevenue} />
-        <MoneyInput id="opex" label="Operating expenses (USD)" value={opex} onChange={setOpex} />
-        <MoneyInput id="reserve" label="Maintenance reserve (USD)" value={reserve} onChange={setReserve} hint={`${reservePct.toFixed(1)}% of revenue`} />
+        <LivePanel
+          status={live.status?.health ?? null}
+          loading={live.loading}
+          summary={liveSummary}
+          priceIn={priceIn}
+          priceOut={priceOut}
+          setPriceIn={setPriceIn}
+          setPriceOut={setPriceOut}
+          hypoRevenue={hypo?.revenueUsd ?? null}
+          hypoCoverage={hypo ? `${hypo.pricedRequests} priced · ${hypo.unpricedRequests} without token counts (excluded)` : null}
+          onActual={applyLiveActual}
+          onHypothetical={applyHypothetical}
+        />
+        <MoneyInput id="revenue" label={scenario === "seed" ? "Monthly revenue (USD)" : scenario === "live_actual" ? "Revenue (USD) — recorded payments" : "Revenue (USD) — HYPOTHETICAL"} value={revenue} onChange={edit(setRevenue)} />
+        <MoneyInput id="opex" label={scenario === "seed" ? "Operating expenses (USD)" : "Operating expenses (USD) — estimated"} value={opex} onChange={edit(setOpex)} />
+        <MoneyInput id="reserve" label="Maintenance reserve (USD)" value={reserve} onChange={edit(setReserve)} hint={`${reservePct.toFixed(1)}% of revenue`} />
         <div>
           <div className="flex items-baseline justify-between">
             <label className="label" htmlFor="share">
@@ -118,16 +182,16 @@ export function Simulator() {
             </label>
             <span className="text-sm tabular-nums text-white">{share || 0}%</span>
           </div>
-          <input id="share" type="range" min={0} max={100} step={1} value={num(share) || 0} onChange={(e) => setShare(e.target.value)} className="mt-2 w-full accent-teal-300" />
+          <input id="share" type="range" min={0} max={100} step={1} value={num(share) || 0} onChange={(e) => edit(setShare)(e.target.value)} className="mt-2 w-full accent-teal-300" />
         </div>
         <div className="flex flex-wrap gap-2">
           <button className="btn-ghost py-1 text-xs" onClick={() => loadMonth(monthIdx)}>
-            Reset to reported
+            Reset to seeded month
           </button>
-          <button className="btn-ghost py-1 text-xs" onClick={() => setRevenue(String(Math.round(num(revenue) * 0.6)))}>
+          <button className="btn-ghost py-1 text-xs" onClick={() => edit(setRevenue)(String(Math.round(num(revenue) * 0.6)))}>
             Stress: −40% revenue
           </button>
-          <button className="btn-ghost py-1 text-xs" onClick={() => setOpex(String(Math.round(num(opex) * 1.25)))}>
+          <button className="btn-ghost py-1 text-xs" onClick={() => edit(setOpex)(String(Math.round(num(opex) * 1.25)))}>
             Stress: +25% opex
           </button>
         </div>
@@ -142,7 +206,13 @@ export function Simulator() {
 
       <div className="min-w-0 space-y-6">
         <section className="card">
-          <h2 className="mb-3 text-lg font-semibold text-white">Net distributable cash</h2>
+          <div className="mb-3 flex flex-wrap items-center justify-between gap-2">
+            <h2 className="text-lg font-semibold text-white">Net distributable cash</h2>
+            <span data-testid="scenario-label" className={`badge ${SCENARIO_LABEL[scenario].cls}`}>
+              {SCENARIO_LABEL[scenario].text}
+              {edited ? " · manually edited" : ""}
+            </span>
+          </div>
           {result ? (
             <div className="grid gap-2 sm:grid-cols-2 xl:grid-cols-4">
               <Big label="Net operating cash" value={formatUsd(result.netOperatingCashCents)} sub="revenue − opex" />
@@ -279,5 +349,67 @@ function Big({ label, value, sub, accent }: { label: string; value: string; sub:
       <div className={`mt-1 text-xl font-semibold tabular-nums ${accent ? "text-accent" : "text-white"}`}>{value}</div>
       <div className="text-xs text-slate-400">{sub}</div>
     </div>
+  );
+}
+
+function LivePanel(p: {
+  status: string | null;
+  loading: boolean;
+  summary: import("@/lib/inference/types").UsageSummary | null;
+  priceIn: string;
+  priceOut: string;
+  setPriceIn: (v: string) => void;
+  setPriceOut: (v: string) => void;
+  hypoRevenue: number | null;
+  hypoCoverage: string | null;
+  onActual: () => void;
+  onHypothetical: () => void;
+}) {
+  const s = p.summary;
+  return (
+    <details className="rounded-lg border border-sky-500/30 bg-sky-500/5 p-3" open>
+      <summary className="cursor-pointer text-sm font-semibold text-white">Live inference usage (Mac mini · last 30 days)</summary>
+      <div className="mt-2 space-y-2 text-xs text-slate-300">
+        {p.loading && !s && <p className="text-slate-400">Loading live usage…</p>}
+        {!p.loading && !s && (
+          <p className="text-slate-400">
+            Live usage unavailable ({p.status === "not_configured" ? "gateway not configured" : p.status === "offline" ? "gateway offline" : "no summary"}). Nothing is estimated in its place.
+          </p>
+        )}
+        {s && (
+          <>
+            <p>
+              {s.requests.success.toLocaleString()} successful requests · {s.tokens.inputTokens.toLocaleString()} in / {s.tokens.outputTokens.toLocaleString()} out tokens (measured) · est. cost ${s.estimated.operatingCostUsd.toFixed(4)}
+            </p>
+            <button className="btn-ghost w-full py-1 text-xs" onClick={p.onActual}>
+              Load actual: revenue $0 (no payments), opex = estimated cost
+            </button>
+            <div className="rounded-md border border-amber-500/30 bg-amber-500/5 p-2">
+              <p className="mb-1 font-semibold text-amber-200">Hypothetical paid scenario</p>
+              <div className="grid grid-cols-2 gap-2">
+                <label className="space-y-1">
+                  <span className="text-slate-400">$ / 1M input tokens</span>
+                  <input className="input py-1" type="number" min={0} step="0.01" value={p.priceIn} onChange={(e) => p.setPriceIn(e.target.value)} />
+                </label>
+                <label className="space-y-1">
+                  <span className="text-slate-400">$ / 1M output tokens</span>
+                  <input className="input py-1" type="number" min={0} step="0.01" value={p.priceOut} onChange={(e) => p.setPriceOut(e.target.value)} />
+                </label>
+              </div>
+              {p.hypoRevenue === null ? (
+                <p className="mt-1 text-slate-400">No runtime-reported token counts to price (or invalid prices). Token counts are never estimated.</p>
+              ) : (
+                <>
+                  <p className="mt-1 text-slate-400">Would-be revenue ${p.hypoRevenue < 0.01 ? p.hypoRevenue.toFixed(6) : p.hypoRevenue.toFixed(2)} ({p.hypoCoverage}); the simulator rounds to whole cents. Illustrative prices, not an offer.</p>
+                  <button className="btn-ghost mt-1 w-full py-1 text-xs" onClick={p.onHypothetical}>
+                    Load HYPOTHETICAL scenario
+                  </button>
+                </>
+              )}
+            </div>
+          </>
+        )}
+      </div>
+    </details>
   );
 }

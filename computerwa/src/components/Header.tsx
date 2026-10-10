@@ -17,6 +17,7 @@ function WalletButton() {
 const NAV = [
   { href: "/", label: "Marketplace" },
   { href: "/simulator", label: "Distribution simulator" },
+  { href: "/inference", label: "Live inference" },
   { href: "/transparency", label: "On-chain records" },
   { href: "/about", label: "How it works" },
 ];

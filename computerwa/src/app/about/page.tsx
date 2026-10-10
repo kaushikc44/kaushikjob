@@ -46,8 +46,9 @@ export default function AboutPage() {
           <Box tone="chain" title="Solana devnet" items={["SPL Memo: pool-registration record + data hash", "SPL Token: test mint, supply, holder balances", "Memo: no-rights notice in mint & transfers", "Records rediscovered via signature history"]} />
         </div>
         <p className="mt-4 text-xs text-slate-400">
-          No backend, database or custom on-chain program is needed for the demo. Everything on-chain uses audited, already-deployed
-          SPL programs.
+          No database or custom on-chain program is needed for the demo. Everything on-chain uses audited, already-deployed SPL
+          programs. Live inference usage comes from a separate gateway on the operator&apos;s Mac mini, read by a server-only API
+          route. The browser never sees the gateway URL or keys.
         </p>
       </section>
 
