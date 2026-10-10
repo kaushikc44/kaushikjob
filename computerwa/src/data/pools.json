@@ -1,0 +1,2045 @@
+{
+  "generatedAt": "2026-10-01T00:00:00.000Z",
+  "disclaimer": "FICTIONAL DEMO DATA. Operators, assets, serial numbers, revenue and costs are invented for a hackathon prototype and have not been independently verified.",
+  "pools": [
+    {
+      "id": "syd-h100-a",
+      "name": "Harbour Edge H100 Pool A",
+      "operator": "Demo Operator: Southern Cross Compute (fictional)",
+      "location": "Sydney, NSW (Tier III colocation)",
+      "gpuModel": "NVIDIA H100 SXM5 80GB",
+      "units": 64,
+      "acquisitionCost": 2016000,
+      "acquisitionDate": "2025-09-12",
+      "status": "Deployed",
+      "kwPerGpu": 1.25,
+      "reserveRatePct": 8,
+      "holderSharePct": 70,
+      "tokenSupply": 1000000,
+      "tokenSymbol": "cRWA-H100A",
+      "serials": [
+        "DEMO-H100-0001",
+        "DEMO-H100-0002",
+        "DEMO-H100-0003",
+        "DEMO-H100-0004",
+        "DEMO-H100-0005",
+        "DEMO-H100-0006",
+        "DEMO-H100-0007",
+        "DEMO-H100-0008",
+        "DEMO-H100-0009",
+        "DEMO-H100-0010",
+        "DEMO-H100-0011",
+        "DEMO-H100-0012",
+        "DEMO-H100-0013",
+        "DEMO-H100-0014",
+        "DEMO-H100-0015",
+        "DEMO-H100-0016",
+        "DEMO-H100-0017",
+        "DEMO-H100-0018",
+        "DEMO-H100-0019",
+        "DEMO-H100-0020",
+        "DEMO-H100-0021",
+        "DEMO-H100-0022",
+        "DEMO-H100-0023",
+        "DEMO-H100-0024",
+        "DEMO-H100-0025",
+        "DEMO-H100-0026",
+        "DEMO-H100-0027",
+        "DEMO-H100-0028",
+        "DEMO-H100-0029",
+        "DEMO-H100-0030",
+        "DEMO-H100-0031",
+        "DEMO-H100-0032",
+        "DEMO-H100-0033",
+        "DEMO-H100-0034",
+        "DEMO-H100-0035",
+        "DEMO-H100-0036",
+        "DEMO-H100-0037",
+        "DEMO-H100-0038",
+        "DEMO-H100-0039",
+        "DEMO-H100-0040",
+        "DEMO-H100-0041",
+        "DEMO-H100-0042",
+        "DEMO-H100-0043",
+        "DEMO-H100-0044",
+        "DEMO-H100-0045",
+        "DEMO-H100-0046",
+        "DEMO-H100-0047",
+        "DEMO-H100-0048",
+        "DEMO-H100-0049",
+        "DEMO-H100-0050",
+        "DEMO-H100-0051",
+        "DEMO-H100-0052",
+        "DEMO-H100-0053",
+        "DEMO-H100-0054",
+        "DEMO-H100-0055",
+        "DEMO-H100-0056",
+        "DEMO-H100-0057",
+        "DEMO-H100-0058",
+        "DEMO-H100-0059",
+        "DEMO-H100-0060",
+        "DEMO-H100-0061",
+        "DEMO-H100-0062",
+        "DEMO-H100-0063",
+        "DEMO-H100-0064"
+      ],
+      "description": "Inference-optimised H100 cluster serving LLM API workloads under short-term reserved contracts. All figures are fictional.",
+      "months": [
+        {
+          "month": "2025-10",
+          "hours": 744,
+          "utilizationPct": 53.75,
+          "pricePerGpuHour": 2.16,
+          "revenue": 55283.01,
+          "opex": {
+            "power": 10988.45,
+            "colocation": 14800,
+            "network": 3234.6,
+            "operations": 9500
+          },
+          "reserve": 4422.64
+        },
+        {
+          "month": "2025-11",
+          "hours": 720,
+          "utilizationPct": 78.81,
+          "pricePerGpuHour": 2.16,
+          "revenue": 78441.12,
+          "opex": {
+            "power": 13392.27,
+            "colocation": 14800,
+            "network": 3065.61,
+            "operations": 9500
+          },
+          "reserve": 6275.29
+        },
+        {
+          "month": "2025-12",
+          "hours": 744,
+          "utilizationPct": 76.49,
+          "pricePerGpuHour": 2.14,
+          "revenue": 77944.86,
+          "opex": {
+            "power": 13575.19,
+            "colocation": 14800,
+            "network": 3193.61,
+            "operations": 9500
+          },
+          "reserve": 6235.59
+        },
+        {
+          "month": "2026-01",
+          "hours": 744,
+          "utilizationPct": 74.84,
+          "pricePerGpuHour": 2.18,
+          "revenue": 77685.77,
+          "opex": {
+            "power": 13387.16,
+            "colocation": 14800,
+            "network": 3258.09,
+            "operations": 9500
+          },
+          "reserve": 6214.86
+        },
+        {
+          "month": "2026-02",
+          "hours": 672,
+          "utilizationPct": 73.71,
+          "pricePerGpuHour": 2.13,
+          "revenue": 67526.55,
+          "opex": {
+            "power": 11975.9,
+            "colocation": 14800,
+            "network": 3160.63,
+            "operations": 9500
+          },
+          "reserve": 5402.12
+        },
+        {
+          "month": "2026-03",
+          "hours": 744,
+          "utilizationPct": 72.53,
+          "pricePerGpuHour": 2.17,
+          "revenue": 74942.64,
+          "opex": {
+            "power": 13124.42,
+            "colocation": 14800,
+            "network": 3224.49,
+            "operations": 9500
+          },
+          "reserve": 5995.41
+        },
+        {
+          "month": "2026-04",
+          "hours": 720,
+          "utilizationPct": 81.73,
+          "pricePerGpuHour": 2.2,
+          "revenue": 82855.62,
+          "opex": {
+            "power": 13713.87,
+            "colocation": 14800,
+            "network": 3286.02,
+            "operations": 9500
+          },
+          "reserve": 6628.45
+        },
+        {
+          "month": "2026-05",
+          "hours": 744,
+          "utilizationPct": 79.68,
+          "pricePerGpuHour": 2.11,
+          "revenue": 80051.58,
+          "opex": {
+            "power": 13937.4,
+            "colocation": 14800,
+            "network": 3057.99,
+            "operations": 9500
+          },
+          "reserve": 6404.13
+        },
+        {
+          "month": "2026-06",
+          "hours": 720,
+          "utilizationPct": 84.53,
+          "pricePerGpuHour": 2.12,
+          "revenue": 82579.01,
+          "opex": {
+            "power": 14022.19,
+            "colocation": 14800,
+            "network": 3086.89,
+            "operations": 9500
+          },
+          "reserve": 6606.32
+        },
+        {
+          "month": "2026-07",
+          "hours": 744,
+          "utilizationPct": 77.57,
+          "pricePerGpuHour": 2.16,
+          "revenue": 79777.65,
+          "opex": {
+            "power": 13697.32,
+            "colocation": 14800,
+            "network": 3224.53,
+            "operations": 9500
+          },
+          "reserve": 6382.21
+        },
+        {
+          "month": "2026-08",
+          "hours": 744,
+          "utilizationPct": 75.72,
+          "pricePerGpuHour": 2.21,
+          "revenue": 79679.73,
+          "opex": {
+            "power": 13487.13,
+            "colocation": 14800,
+            "network": 3302.49,
+            "operations": 9500
+          },
+          "reserve": 6374.38
+        },
+        {
+          "month": "2026-09",
+          "hours": 720,
+          "utilizationPct": 74.9,
+          "pricePerGpuHour": 2.08,
+          "revenue": 71793.74,
+          "opex": {
+            "power": 12962.5,
+            "colocation": 14800,
+            "network": 3309.22,
+            "operations": 9500
+          },
+          "reserve": 5743.5
+        }
+      ],
+      "ledger": [
+        {
+          "id": "syd-h100-a-2026-09-res",
+          "date": "2026-10-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -5743.5,
+          "reference": "RSV-SYD-H100-A-1073"
+        },
+        {
+          "id": "syd-h100-a-2026-09-rev",
+          "date": "2026-10-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-09 (74.9% utilisation)",
+          "amount": 71793.74,
+          "reference": "INV-SYD-H100-A-1068"
+        },
+        {
+          "id": "syd-h100-a-2026-09-col",
+          "date": "2026-09-30",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -14800,
+          "reference": "BILL-SYD-H100-A-1070"
+        },
+        {
+          "id": "syd-h100-a-2026-09-net",
+          "date": "2026-09-30",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -3309.22,
+          "reference": "BILL-SYD-H100-A-1071"
+        },
+        {
+          "id": "syd-h100-a-2026-09-ops",
+          "date": "2026-09-30",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -9500,
+          "reference": "BILL-SYD-H100-A-1072"
+        },
+        {
+          "id": "syd-h100-a-2026-09-pwr",
+          "date": "2026-09-30",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -12962.5,
+          "reference": "BILL-SYD-H100-A-1069"
+        },
+        {
+          "id": "syd-h100-a-2026-08-res",
+          "date": "2026-09-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -6374.38,
+          "reference": "RSV-SYD-H100-A-1067"
+        },
+        {
+          "id": "syd-h100-a-2026-08-rev",
+          "date": "2026-09-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-08 (75.7% utilisation)",
+          "amount": 79679.73,
+          "reference": "INV-SYD-H100-A-1062"
+        },
+        {
+          "id": "syd-h100-a-2026-08-col",
+          "date": "2026-08-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -14800,
+          "reference": "BILL-SYD-H100-A-1064"
+        },
+        {
+          "id": "syd-h100-a-2026-08-net",
+          "date": "2026-08-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -3302.49,
+          "reference": "BILL-SYD-H100-A-1065"
+        },
+        {
+          "id": "syd-h100-a-2026-08-ops",
+          "date": "2026-08-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -9500,
+          "reference": "BILL-SYD-H100-A-1066"
+        },
+        {
+          "id": "syd-h100-a-2026-08-pwr",
+          "date": "2026-08-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -13487.13,
+          "reference": "BILL-SYD-H100-A-1063"
+        },
+        {
+          "id": "syd-h100-a-2026-07-res",
+          "date": "2026-08-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -6382.21,
+          "reference": "RSV-SYD-H100-A-1061"
+        },
+        {
+          "id": "syd-h100-a-2026-07-rev",
+          "date": "2026-08-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-07 (77.6% utilisation)",
+          "amount": 79777.65,
+          "reference": "INV-SYD-H100-A-1056"
+        },
+        {
+          "id": "syd-h100-a-2026-07-col",
+          "date": "2026-07-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -14800,
+          "reference": "BILL-SYD-H100-A-1058"
+        },
+        {
+          "id": "syd-h100-a-2026-07-net",
+          "date": "2026-07-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -3224.53,
+          "reference": "BILL-SYD-H100-A-1059"
+        },
+        {
+          "id": "syd-h100-a-2026-07-ops",
+          "date": "2026-07-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -9500,
+          "reference": "BILL-SYD-H100-A-1060"
+        },
+        {
+          "id": "syd-h100-a-2026-07-pwr",
+          "date": "2026-07-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -13697.32,
+          "reference": "BILL-SYD-H100-A-1057"
+        },
+        {
+          "id": "syd-h100-a-2026-06-res",
+          "date": "2026-07-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -6606.32,
+          "reference": "RSV-SYD-H100-A-1055"
+        },
+        {
+          "id": "syd-h100-a-2026-06-rev",
+          "date": "2026-07-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-06 (84.5% utilisation)",
+          "amount": 82579.01,
+          "reference": "INV-SYD-H100-A-1050"
+        },
+        {
+          "id": "syd-h100-a-2026-06-col",
+          "date": "2026-06-30",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -14800,
+          "reference": "BILL-SYD-H100-A-1052"
+        },
+        {
+          "id": "syd-h100-a-2026-06-net",
+          "date": "2026-06-30",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -3086.89,
+          "reference": "BILL-SYD-H100-A-1053"
+        },
+        {
+          "id": "syd-h100-a-2026-06-ops",
+          "date": "2026-06-30",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -9500,
+          "reference": "BILL-SYD-H100-A-1054"
+        },
+        {
+          "id": "syd-h100-a-2026-06-pwr",
+          "date": "2026-06-30",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -14022.19,
+          "reference": "BILL-SYD-H100-A-1051"
+        },
+        {
+          "id": "syd-h100-a-2026-05-res",
+          "date": "2026-06-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -6404.13,
+          "reference": "RSV-SYD-H100-A-1049"
+        },
+        {
+          "id": "syd-h100-a-2026-05-rev",
+          "date": "2026-06-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-05 (79.7% utilisation)",
+          "amount": 80051.58,
+          "reference": "INV-SYD-H100-A-1044"
+        },
+        {
+          "id": "syd-h100-a-2026-05-col",
+          "date": "2026-05-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -14800,
+          "reference": "BILL-SYD-H100-A-1046"
+        },
+        {
+          "id": "syd-h100-a-2026-05-net",
+          "date": "2026-05-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -3057.99,
+          "reference": "BILL-SYD-H100-A-1047"
+        },
+        {
+          "id": "syd-h100-a-2026-05-ops",
+          "date": "2026-05-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -9500,
+          "reference": "BILL-SYD-H100-A-1048"
+        },
+        {
+          "id": "syd-h100-a-2026-05-pwr",
+          "date": "2026-05-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -13937.4,
+          "reference": "BILL-SYD-H100-A-1045"
+        },
+        {
+          "id": "syd-h100-a-2026-04-res",
+          "date": "2026-05-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -6628.45,
+          "reference": "RSV-SYD-H100-A-1043"
+        },
+        {
+          "id": "syd-h100-a-2026-04-rev",
+          "date": "2026-05-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-04 (81.7% utilisation)",
+          "amount": 82855.62,
+          "reference": "INV-SYD-H100-A-1038"
+        },
+        {
+          "id": "syd-h100-a-2026-04-col",
+          "date": "2026-04-30",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -14800,
+          "reference": "BILL-SYD-H100-A-1040"
+        },
+        {
+          "id": "syd-h100-a-2026-04-net",
+          "date": "2026-04-30",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -3286.02,
+          "reference": "BILL-SYD-H100-A-1041"
+        },
+        {
+          "id": "syd-h100-a-2026-04-ops",
+          "date": "2026-04-30",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -9500,
+          "reference": "BILL-SYD-H100-A-1042"
+        },
+        {
+          "id": "syd-h100-a-2026-04-pwr",
+          "date": "2026-04-30",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -13713.87,
+          "reference": "BILL-SYD-H100-A-1039"
+        },
+        {
+          "id": "syd-h100-a-2026-03-res",
+          "date": "2026-04-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -5995.41,
+          "reference": "RSV-SYD-H100-A-1037"
+        },
+        {
+          "id": "syd-h100-a-2026-03-rev",
+          "date": "2026-04-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-03 (72.5% utilisation)",
+          "amount": 74942.64,
+          "reference": "INV-SYD-H100-A-1032"
+        },
+        {
+          "id": "syd-h100-a-2026-03-col",
+          "date": "2026-03-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -14800,
+          "reference": "BILL-SYD-H100-A-1034"
+        },
+        {
+          "id": "syd-h100-a-2026-03-net",
+          "date": "2026-03-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -3224.49,
+          "reference": "BILL-SYD-H100-A-1035"
+        },
+        {
+          "id": "syd-h100-a-2026-03-ops",
+          "date": "2026-03-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -9500,
+          "reference": "BILL-SYD-H100-A-1036"
+        },
+        {
+          "id": "syd-h100-a-2026-03-pwr",
+          "date": "2026-03-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -13124.42,
+          "reference": "BILL-SYD-H100-A-1033"
+        },
+        {
+          "id": "syd-h100-a-2026-02-res",
+          "date": "2026-03-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -5402.12,
+          "reference": "RSV-SYD-H100-A-1031"
+        },
+        {
+          "id": "syd-h100-a-2026-02-rev",
+          "date": "2026-03-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-02 (73.7% utilisation)",
+          "amount": 67526.55,
+          "reference": "INV-SYD-H100-A-1026"
+        },
+        {
+          "id": "syd-h100-a-2026-02-col",
+          "date": "2026-02-28",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -14800,
+          "reference": "BILL-SYD-H100-A-1028"
+        },
+        {
+          "id": "syd-h100-a-2026-02-net",
+          "date": "2026-02-28",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -3160.63,
+          "reference": "BILL-SYD-H100-A-1029"
+        },
+        {
+          "id": "syd-h100-a-2026-02-ops",
+          "date": "2026-02-28",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -9500,
+          "reference": "BILL-SYD-H100-A-1030"
+        },
+        {
+          "id": "syd-h100-a-2026-02-pwr",
+          "date": "2026-02-28",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -11975.9,
+          "reference": "BILL-SYD-H100-A-1027"
+        },
+        {
+          "id": "syd-h100-a-2026-01-res",
+          "date": "2026-02-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -6214.86,
+          "reference": "RSV-SYD-H100-A-1024"
+        },
+        {
+          "id": "syd-h100-a-2026-01-rev",
+          "date": "2026-02-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-01 (74.8% utilisation)",
+          "amount": 77685.77,
+          "reference": "INV-SYD-H100-A-1019"
+        },
+        {
+          "id": "syd-h100-a-2026-01-col",
+          "date": "2026-01-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -14800,
+          "reference": "BILL-SYD-H100-A-1021"
+        },
+        {
+          "id": "syd-h100-a-2026-01-net",
+          "date": "2026-01-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -3258.09,
+          "reference": "BILL-SYD-H100-A-1022"
+        },
+        {
+          "id": "syd-h100-a-2026-01-ops",
+          "date": "2026-01-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -9500,
+          "reference": "BILL-SYD-H100-A-1023"
+        },
+        {
+          "id": "syd-h100-a-2026-01-pwr",
+          "date": "2026-01-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -13387.16,
+          "reference": "BILL-SYD-H100-A-1020"
+        },
+        {
+          "id": "syd-h100-a-2026-01-mnt",
+          "date": "2026-01-15",
+          "kind": "maintenance",
+          "description": "Component replacement (PSU/fan) — paid from reserve, not from distributable cash",
+          "amount": 0,
+          "reference": "WO-SYD-H100-A-1025 · reserve draw $1420.66"
+        },
+        {
+          "id": "syd-h100-a-2025-12-res",
+          "date": "2026-01-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -6235.59,
+          "reference": "RSV-SYD-H100-A-1018"
+        },
+        {
+          "id": "syd-h100-a-2025-12-rev",
+          "date": "2026-01-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2025-12 (76.5% utilisation)",
+          "amount": 77944.86,
+          "reference": "INV-SYD-H100-A-1013"
+        },
+        {
+          "id": "syd-h100-a-2025-12-col",
+          "date": "2025-12-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -14800,
+          "reference": "BILL-SYD-H100-A-1015"
+        },
+        {
+          "id": "syd-h100-a-2025-12-net",
+          "date": "2025-12-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -3193.61,
+          "reference": "BILL-SYD-H100-A-1016"
+        },
+        {
+          "id": "syd-h100-a-2025-12-ops",
+          "date": "2025-12-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -9500,
+          "reference": "BILL-SYD-H100-A-1017"
+        },
+        {
+          "id": "syd-h100-a-2025-12-pwr",
+          "date": "2025-12-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -13575.19,
+          "reference": "BILL-SYD-H100-A-1014"
+        },
+        {
+          "id": "syd-h100-a-2025-11-res",
+          "date": "2025-12-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -6275.29,
+          "reference": "RSV-SYD-H100-A-1012"
+        },
+        {
+          "id": "syd-h100-a-2025-11-rev",
+          "date": "2025-12-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2025-11 (78.8% utilisation)",
+          "amount": 78441.12,
+          "reference": "INV-SYD-H100-A-1007"
+        },
+        {
+          "id": "syd-h100-a-2025-11-col",
+          "date": "2025-11-30",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -14800,
+          "reference": "BILL-SYD-H100-A-1009"
+        },
+        {
+          "id": "syd-h100-a-2025-11-net",
+          "date": "2025-11-30",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -3065.61,
+          "reference": "BILL-SYD-H100-A-1010"
+        },
+        {
+          "id": "syd-h100-a-2025-11-ops",
+          "date": "2025-11-30",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -9500,
+          "reference": "BILL-SYD-H100-A-1011"
+        },
+        {
+          "id": "syd-h100-a-2025-11-pwr",
+          "date": "2025-11-30",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -13392.27,
+          "reference": "BILL-SYD-H100-A-1008"
+        },
+        {
+          "id": "syd-h100-a-2025-10-res",
+          "date": "2025-11-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -4422.64,
+          "reference": "RSV-SYD-H100-A-1006"
+        },
+        {
+          "id": "syd-h100-a-2025-10-rev",
+          "date": "2025-11-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2025-10 (53.8% utilisation)",
+          "amount": 55283.01,
+          "reference": "INV-SYD-H100-A-1001"
+        },
+        {
+          "id": "syd-h100-a-2025-10-col",
+          "date": "2025-10-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -14800,
+          "reference": "BILL-SYD-H100-A-1003"
+        },
+        {
+          "id": "syd-h100-a-2025-10-net",
+          "date": "2025-10-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -3234.6,
+          "reference": "BILL-SYD-H100-A-1004"
+        },
+        {
+          "id": "syd-h100-a-2025-10-ops",
+          "date": "2025-10-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -9500,
+          "reference": "BILL-SYD-H100-A-1005"
+        },
+        {
+          "id": "syd-h100-a-2025-10-pwr",
+          "date": "2025-10-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -10988.45,
+          "reference": "BILL-SYD-H100-A-1002"
+        },
+        {
+          "id": "syd-h100-a-acq",
+          "date": "2025-09-12",
+          "kind": "acquisition",
+          "description": "Acquisition of 64× NVIDIA H100 SXM5 80GB incl. servers & networking (demo)",
+          "amount": -2016000,
+          "reference": "PO-SYD-H100-A-1000"
+        }
+      ]
+    },
+    {
+      "id": "mel-l40s-b",
+      "name": "Yarra L40S Batch Cluster",
+      "operator": "Demo Operator: Laneway GPU Co. (fictional)",
+      "location": "Melbourne, VIC (enterprise data hall)",
+      "gpuModel": "NVIDIA L40S 48GB",
+      "units": 128,
+      "acquisitionCost": 1139200,
+      "acquisitionDate": "2025-08-28",
+      "status": "Deployed",
+      "kwPerGpu": 0.45,
+      "reserveRatePct": 10,
+      "holderSharePct": 65,
+      "tokenSupply": 1000000,
+      "tokenSymbol": "cRWA-L40SB",
+      "serials": [
+        "DEMO-L40S-0001",
+        "DEMO-L40S-0002",
+        "DEMO-L40S-0003",
+        "DEMO-L40S-0004",
+        "DEMO-L40S-0005",
+        "DEMO-L40S-0006",
+        "DEMO-L40S-0007",
+        "DEMO-L40S-0008",
+        "DEMO-L40S-0009",
+        "DEMO-L40S-0010",
+        "DEMO-L40S-0011",
+        "DEMO-L40S-0012",
+        "DEMO-L40S-0013",
+        "DEMO-L40S-0014",
+        "DEMO-L40S-0015",
+        "DEMO-L40S-0016",
+        "DEMO-L40S-0017",
+        "DEMO-L40S-0018",
+        "DEMO-L40S-0019",
+        "DEMO-L40S-0020",
+        "DEMO-L40S-0021",
+        "DEMO-L40S-0022",
+        "DEMO-L40S-0023",
+        "DEMO-L40S-0024",
+        "DEMO-L40S-0025",
+        "DEMO-L40S-0026",
+        "DEMO-L40S-0027",
+        "DEMO-L40S-0028",
+        "DEMO-L40S-0029",
+        "DEMO-L40S-0030",
+        "DEMO-L40S-0031",
+        "DEMO-L40S-0032",
+        "DEMO-L40S-0033",
+        "DEMO-L40S-0034",
+        "DEMO-L40S-0035",
+        "DEMO-L40S-0036",
+        "DEMO-L40S-0037",
+        "DEMO-L40S-0038",
+        "DEMO-L40S-0039",
+        "DEMO-L40S-0040",
+        "DEMO-L40S-0041",
+        "DEMO-L40S-0042",
+        "DEMO-L40S-0043",
+        "DEMO-L40S-0044",
+        "DEMO-L40S-0045",
+        "DEMO-L40S-0046",
+        "DEMO-L40S-0047",
+        "DEMO-L40S-0048",
+        "DEMO-L40S-0049",
+        "DEMO-L40S-0050",
+        "DEMO-L40S-0051",
+        "DEMO-L40S-0052",
+        "DEMO-L40S-0053",
+        "DEMO-L40S-0054",
+        "DEMO-L40S-0055",
+        "DEMO-L40S-0056",
+        "DEMO-L40S-0057",
+        "DEMO-L40S-0058",
+        "DEMO-L40S-0059",
+        "DEMO-L40S-0060",
+        "DEMO-L40S-0061",
+        "DEMO-L40S-0062",
+        "DEMO-L40S-0063",
+        "DEMO-L40S-0064",
+        "DEMO-L40S-0065",
+        "DEMO-L40S-0066",
+        "DEMO-L40S-0067",
+        "DEMO-L40S-0068",
+        "DEMO-L40S-0069",
+        "DEMO-L40S-0070",
+        "DEMO-L40S-0071",
+        "DEMO-L40S-0072",
+        "DEMO-L40S-0073",
+        "DEMO-L40S-0074",
+        "DEMO-L40S-0075",
+        "DEMO-L40S-0076",
+        "DEMO-L40S-0077",
+        "DEMO-L40S-0078",
+        "DEMO-L40S-0079",
+        "DEMO-L40S-0080",
+        "DEMO-L40S-0081",
+        "DEMO-L40S-0082",
+        "DEMO-L40S-0083",
+        "DEMO-L40S-0084",
+        "DEMO-L40S-0085",
+        "DEMO-L40S-0086",
+        "DEMO-L40S-0087",
+        "DEMO-L40S-0088",
+        "DEMO-L40S-0089",
+        "DEMO-L40S-0090",
+        "DEMO-L40S-0091",
+        "DEMO-L40S-0092",
+        "DEMO-L40S-0093",
+        "DEMO-L40S-0094",
+        "DEMO-L40S-0095",
+        "DEMO-L40S-0096",
+        "DEMO-L40S-0097",
+        "DEMO-L40S-0098",
+        "DEMO-L40S-0099",
+        "DEMO-L40S-0100",
+        "DEMO-L40S-0101",
+        "DEMO-L40S-0102",
+        "DEMO-L40S-0103",
+        "DEMO-L40S-0104",
+        "DEMO-L40S-0105",
+        "DEMO-L40S-0106",
+        "DEMO-L40S-0107",
+        "DEMO-L40S-0108",
+        "DEMO-L40S-0109",
+        "DEMO-L40S-0110",
+        "DEMO-L40S-0111",
+        "DEMO-L40S-0112",
+        "DEMO-L40S-0113",
+        "DEMO-L40S-0114",
+        "DEMO-L40S-0115",
+        "DEMO-L40S-0116",
+        "DEMO-L40S-0117",
+        "DEMO-L40S-0118",
+        "DEMO-L40S-0119",
+        "DEMO-L40S-0120",
+        "DEMO-L40S-0121",
+        "DEMO-L40S-0122",
+        "DEMO-L40S-0123",
+        "DEMO-L40S-0124",
+        "DEMO-L40S-0125",
+        "DEMO-L40S-0126",
+        "DEMO-L40S-0127",
+        "DEMO-L40S-0128"
+      ],
+      "description": "Mixed batch inference and image-generation cluster on spot-style pricing; utilisation is more volatile. All figures are fictional.",
+      "months": [
+        {
+          "month": "2025-10",
+          "hours": 744,
+          "utilizationPct": 64.46,
+          "pricePerGpuHour": 0.84,
+          "revenue": 51566.64,
+          "opex": {
+            "power": 7951.87,
+            "colocation": 9600,
+            "network": 2042.29,
+            "operations": 7200
+          },
+          "reserve": 5156.66
+        },
+        {
+          "month": "2025-11",
+          "hours": 720,
+          "utilizationPct": 61.67,
+          "pricePerGpuHour": 0.89,
+          "revenue": 50587.21,
+          "opex": {
+            "power": 7495.48,
+            "colocation": 9600,
+            "network": 2088.53,
+            "operations": 7200
+          },
+          "reserve": 5058.72
+        },
+        {
+          "month": "2025-12",
+          "hours": 744,
+          "utilizationPct": 66.54,
+          "pricePerGpuHour": 0.83,
+          "revenue": 52592.52,
+          "opex": {
+            "power": 8105.58,
+            "colocation": 9600,
+            "network": 2017.53,
+            "operations": 7200
+          },
+          "reserve": 5259.25
+        },
+        {
+          "month": "2026-01",
+          "hours": 744,
+          "utilizationPct": 63.87,
+          "pricePerGpuHour": 0.84,
+          "revenue": 51095.69,
+          "opex": {
+            "power": 7908.25,
+            "colocation": 9600,
+            "network": 2110.93,
+            "operations": 7200
+          },
+          "reserve": 5109.57
+        },
+        {
+          "month": "2026-02",
+          "hours": 672,
+          "utilizationPct": 64.95,
+          "pricePerGpuHour": 0.88,
+          "revenue": 49160.14,
+          "opex": {
+            "power": 7214.69,
+            "colocation": 9600,
+            "network": 2134.79,
+            "operations": 7200
+          },
+          "reserve": 4916.01
+        },
+        {
+          "month": "2026-03",
+          "hours": 744,
+          "utilizationPct": 59.72,
+          "pricePerGpuHour": 0.87,
+          "revenue": 49483.06,
+          "opex": {
+            "power": 7600.83,
+            "colocation": 9600,
+            "network": 2083.7,
+            "operations": 7200
+          },
+          "reserve": 4948.31
+        },
+        {
+          "month": "2026-04",
+          "hours": 720,
+          "utilizationPct": 66.35,
+          "pricePerGpuHour": 0.86,
+          "revenue": 52588.92,
+          "opex": {
+            "power": 7830.84,
+            "colocation": 9600,
+            "network": 2031.02,
+            "operations": 7200
+          },
+          "reserve": 5258.89
+        },
+        {
+          "month": "2026-05",
+          "hours": 744,
+          "utilizationPct": 68.9,
+          "pricePerGpuHour": 0.83,
+          "revenue": 54457.31,
+          "opex": {
+            "power": 8280.39,
+            "colocation": 9600,
+            "network": 2056.97,
+            "operations": 7200
+          },
+          "reserve": 5445.73
+        },
+        {
+          "month": "2026-06",
+          "hours": 720,
+          "utilizationPct": 62.95,
+          "pricePerGpuHour": 0.83,
+          "revenue": 48150.2,
+          "opex": {
+            "power": 7586.72,
+            "colocation": 9600,
+            "network": 2062.96,
+            "operations": 7200
+          },
+          "reserve": 4815.02
+        },
+        {
+          "month": "2026-07",
+          "hours": 744,
+          "utilizationPct": 61.16,
+          "pricePerGpuHour": 0.83,
+          "revenue": 48340.34,
+          "opex": {
+            "power": 7706.98,
+            "colocation": 9600,
+            "network": 2085.63,
+            "operations": 7200
+          },
+          "reserve": 4834.03
+        },
+        {
+          "month": "2026-08",
+          "hours": 744,
+          "utilizationPct": 67.43,
+          "pricePerGpuHour": 0.83,
+          "revenue": 53301.13,
+          "opex": {
+            "power": 8172.01,
+            "colocation": 9600,
+            "network": 2019.89,
+            "operations": 7200
+          },
+          "reserve": 5330.11
+        },
+        {
+          "month": "2026-09",
+          "hours": 720,
+          "utilizationPct": 63.43,
+          "pricePerGpuHour": 0.88,
+          "revenue": 51444.56,
+          "opex": {
+            "power": 7621.53,
+            "colocation": 9600,
+            "network": 2036.98,
+            "operations": 7200
+          },
+          "reserve": 5144.46
+        }
+      ],
+      "ledger": [
+        {
+          "id": "mel-l40s-b-2026-09-res",
+          "date": "2026-10-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (10% of revenue)",
+          "amount": -5144.46,
+          "reference": "RSV-MEL-L40S-B-1076"
+        },
+        {
+          "id": "mel-l40s-b-2026-09-rev",
+          "date": "2026-10-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-09 (63.4% utilisation)",
+          "amount": 51444.56,
+          "reference": "INV-MEL-L40S-B-1071"
+        },
+        {
+          "id": "mel-l40s-b-2026-09-col",
+          "date": "2026-09-30",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -9600,
+          "reference": "BILL-MEL-L40S-B-1073"
+        },
+        {
+          "id": "mel-l40s-b-2026-09-net",
+          "date": "2026-09-30",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2036.98,
+          "reference": "BILL-MEL-L40S-B-1074"
+        },
+        {
+          "id": "mel-l40s-b-2026-09-ops",
+          "date": "2026-09-30",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -7200,
+          "reference": "BILL-MEL-L40S-B-1075"
+        },
+        {
+          "id": "mel-l40s-b-2026-09-pwr",
+          "date": "2026-09-30",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -7621.53,
+          "reference": "BILL-MEL-L40S-B-1072"
+        },
+        {
+          "id": "mel-l40s-b-2026-08-res",
+          "date": "2026-09-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (10% of revenue)",
+          "amount": -5330.11,
+          "reference": "RSV-MEL-L40S-B-1070"
+        },
+        {
+          "id": "mel-l40s-b-2026-08-rev",
+          "date": "2026-09-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-08 (67.4% utilisation)",
+          "amount": 53301.13,
+          "reference": "INV-MEL-L40S-B-1065"
+        },
+        {
+          "id": "mel-l40s-b-2026-08-col",
+          "date": "2026-08-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -9600,
+          "reference": "BILL-MEL-L40S-B-1067"
+        },
+        {
+          "id": "mel-l40s-b-2026-08-net",
+          "date": "2026-08-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2019.89,
+          "reference": "BILL-MEL-L40S-B-1068"
+        },
+        {
+          "id": "mel-l40s-b-2026-08-ops",
+          "date": "2026-08-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -7200,
+          "reference": "BILL-MEL-L40S-B-1069"
+        },
+        {
+          "id": "mel-l40s-b-2026-08-pwr",
+          "date": "2026-08-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -8172.01,
+          "reference": "BILL-MEL-L40S-B-1066"
+        },
+        {
+          "id": "mel-l40s-b-2026-07-res",
+          "date": "2026-08-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (10% of revenue)",
+          "amount": -4834.03,
+          "reference": "RSV-MEL-L40S-B-1063"
+        },
+        {
+          "id": "mel-l40s-b-2026-07-rev",
+          "date": "2026-08-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-07 (61.2% utilisation)",
+          "amount": 48340.34,
+          "reference": "INV-MEL-L40S-B-1058"
+        },
+        {
+          "id": "mel-l40s-b-2026-07-col",
+          "date": "2026-07-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -9600,
+          "reference": "BILL-MEL-L40S-B-1060"
+        },
+        {
+          "id": "mel-l40s-b-2026-07-net",
+          "date": "2026-07-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2085.63,
+          "reference": "BILL-MEL-L40S-B-1061"
+        },
+        {
+          "id": "mel-l40s-b-2026-07-ops",
+          "date": "2026-07-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -7200,
+          "reference": "BILL-MEL-L40S-B-1062"
+        },
+        {
+          "id": "mel-l40s-b-2026-07-pwr",
+          "date": "2026-07-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -7706.98,
+          "reference": "BILL-MEL-L40S-B-1059"
+        },
+        {
+          "id": "mel-l40s-b-2026-07-mnt",
+          "date": "2026-07-15",
+          "kind": "maintenance",
+          "description": "Component replacement (PSU/fan) — paid from reserve, not from distributable cash",
+          "amount": 0,
+          "reference": "WO-MEL-L40S-B-1064 · reserve draw $1073.02"
+        },
+        {
+          "id": "mel-l40s-b-2026-06-res",
+          "date": "2026-07-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (10% of revenue)",
+          "amount": -4815.02,
+          "reference": "RSV-MEL-L40S-B-1057"
+        },
+        {
+          "id": "mel-l40s-b-2026-06-rev",
+          "date": "2026-07-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-06 (62.9% utilisation)",
+          "amount": 48150.2,
+          "reference": "INV-MEL-L40S-B-1052"
+        },
+        {
+          "id": "mel-l40s-b-2026-06-col",
+          "date": "2026-06-30",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -9600,
+          "reference": "BILL-MEL-L40S-B-1054"
+        },
+        {
+          "id": "mel-l40s-b-2026-06-net",
+          "date": "2026-06-30",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2062.96,
+          "reference": "BILL-MEL-L40S-B-1055"
+        },
+        {
+          "id": "mel-l40s-b-2026-06-ops",
+          "date": "2026-06-30",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -7200,
+          "reference": "BILL-MEL-L40S-B-1056"
+        },
+        {
+          "id": "mel-l40s-b-2026-06-pwr",
+          "date": "2026-06-30",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -7586.72,
+          "reference": "BILL-MEL-L40S-B-1053"
+        },
+        {
+          "id": "mel-l40s-b-2026-05-res",
+          "date": "2026-06-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (10% of revenue)",
+          "amount": -5445.73,
+          "reference": "RSV-MEL-L40S-B-1050"
+        },
+        {
+          "id": "mel-l40s-b-2026-05-rev",
+          "date": "2026-06-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-05 (68.9% utilisation)",
+          "amount": 54457.31,
+          "reference": "INV-MEL-L40S-B-1045"
+        },
+        {
+          "id": "mel-l40s-b-2026-05-col",
+          "date": "2026-05-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -9600,
+          "reference": "BILL-MEL-L40S-B-1047"
+        },
+        {
+          "id": "mel-l40s-b-2026-05-net",
+          "date": "2026-05-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2056.97,
+          "reference": "BILL-MEL-L40S-B-1048"
+        },
+        {
+          "id": "mel-l40s-b-2026-05-ops",
+          "date": "2026-05-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -7200,
+          "reference": "BILL-MEL-L40S-B-1049"
+        },
+        {
+          "id": "mel-l40s-b-2026-05-pwr",
+          "date": "2026-05-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -8280.39,
+          "reference": "BILL-MEL-L40S-B-1046"
+        },
+        {
+          "id": "mel-l40s-b-2026-05-mnt",
+          "date": "2026-05-15",
+          "kind": "maintenance",
+          "description": "Component replacement (PSU/fan) — paid from reserve, not from distributable cash",
+          "amount": 0,
+          "reference": "WO-MEL-L40S-B-1051 · reserve draw $620.00"
+        },
+        {
+          "id": "mel-l40s-b-2026-04-res",
+          "date": "2026-05-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (10% of revenue)",
+          "amount": -5258.89,
+          "reference": "RSV-MEL-L40S-B-1044"
+        },
+        {
+          "id": "mel-l40s-b-2026-04-rev",
+          "date": "2026-05-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-04 (66.4% utilisation)",
+          "amount": 52588.92,
+          "reference": "INV-MEL-L40S-B-1039"
+        },
+        {
+          "id": "mel-l40s-b-2026-04-col",
+          "date": "2026-04-30",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -9600,
+          "reference": "BILL-MEL-L40S-B-1041"
+        },
+        {
+          "id": "mel-l40s-b-2026-04-net",
+          "date": "2026-04-30",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2031.02,
+          "reference": "BILL-MEL-L40S-B-1042"
+        },
+        {
+          "id": "mel-l40s-b-2026-04-ops",
+          "date": "2026-04-30",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -7200,
+          "reference": "BILL-MEL-L40S-B-1043"
+        },
+        {
+          "id": "mel-l40s-b-2026-04-pwr",
+          "date": "2026-04-30",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -7830.84,
+          "reference": "BILL-MEL-L40S-B-1040"
+        },
+        {
+          "id": "mel-l40s-b-2026-03-res",
+          "date": "2026-04-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (10% of revenue)",
+          "amount": -4948.31,
+          "reference": "RSV-MEL-L40S-B-1037"
+        },
+        {
+          "id": "mel-l40s-b-2026-03-rev",
+          "date": "2026-04-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-03 (59.7% utilisation)",
+          "amount": 49483.06,
+          "reference": "INV-MEL-L40S-B-1032"
+        },
+        {
+          "id": "mel-l40s-b-2026-03-col",
+          "date": "2026-03-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -9600,
+          "reference": "BILL-MEL-L40S-B-1034"
+        },
+        {
+          "id": "mel-l40s-b-2026-03-net",
+          "date": "2026-03-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2083.7,
+          "reference": "BILL-MEL-L40S-B-1035"
+        },
+        {
+          "id": "mel-l40s-b-2026-03-ops",
+          "date": "2026-03-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -7200,
+          "reference": "BILL-MEL-L40S-B-1036"
+        },
+        {
+          "id": "mel-l40s-b-2026-03-pwr",
+          "date": "2026-03-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -7600.83,
+          "reference": "BILL-MEL-L40S-B-1033"
+        },
+        {
+          "id": "mel-l40s-b-2026-03-mnt",
+          "date": "2026-03-15",
+          "kind": "maintenance",
+          "description": "Component replacement (PSU/fan) — paid from reserve, not from distributable cash",
+          "amount": 0,
+          "reference": "WO-MEL-L40S-B-1038 · reserve draw $398.82"
+        },
+        {
+          "id": "mel-l40s-b-2026-02-res",
+          "date": "2026-03-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (10% of revenue)",
+          "amount": -4916.01,
+          "reference": "RSV-MEL-L40S-B-1031"
+        },
+        {
+          "id": "mel-l40s-b-2026-02-rev",
+          "date": "2026-03-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-02 (64.9% utilisation)",
+          "amount": 49160.14,
+          "reference": "INV-MEL-L40S-B-1026"
+        },
+        {
+          "id": "mel-l40s-b-2026-02-col",
+          "date": "2026-02-28",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -9600,
+          "reference": "BILL-MEL-L40S-B-1028"
+        },
+        {
+          "id": "mel-l40s-b-2026-02-net",
+          "date": "2026-02-28",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2134.79,
+          "reference": "BILL-MEL-L40S-B-1029"
+        },
+        {
+          "id": "mel-l40s-b-2026-02-ops",
+          "date": "2026-02-28",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -7200,
+          "reference": "BILL-MEL-L40S-B-1030"
+        },
+        {
+          "id": "mel-l40s-b-2026-02-pwr",
+          "date": "2026-02-28",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -7214.69,
+          "reference": "BILL-MEL-L40S-B-1027"
+        },
+        {
+          "id": "mel-l40s-b-2026-01-res",
+          "date": "2026-02-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (10% of revenue)",
+          "amount": -5109.57,
+          "reference": "RSV-MEL-L40S-B-1025"
+        },
+        {
+          "id": "mel-l40s-b-2026-01-rev",
+          "date": "2026-02-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-01 (63.9% utilisation)",
+          "amount": 51095.69,
+          "reference": "INV-MEL-L40S-B-1020"
+        },
+        {
+          "id": "mel-l40s-b-2026-01-col",
+          "date": "2026-01-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -9600,
+          "reference": "BILL-MEL-L40S-B-1022"
+        },
+        {
+          "id": "mel-l40s-b-2026-01-net",
+          "date": "2026-01-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2110.93,
+          "reference": "BILL-MEL-L40S-B-1023"
+        },
+        {
+          "id": "mel-l40s-b-2026-01-ops",
+          "date": "2026-01-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -7200,
+          "reference": "BILL-MEL-L40S-B-1024"
+        },
+        {
+          "id": "mel-l40s-b-2026-01-pwr",
+          "date": "2026-01-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -7908.25,
+          "reference": "BILL-MEL-L40S-B-1021"
+        },
+        {
+          "id": "mel-l40s-b-2025-12-res",
+          "date": "2026-01-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (10% of revenue)",
+          "amount": -5259.25,
+          "reference": "RSV-MEL-L40S-B-1018"
+        },
+        {
+          "id": "mel-l40s-b-2025-12-rev",
+          "date": "2026-01-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2025-12 (66.5% utilisation)",
+          "amount": 52592.52,
+          "reference": "INV-MEL-L40S-B-1013"
+        },
+        {
+          "id": "mel-l40s-b-2025-12-col",
+          "date": "2025-12-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -9600,
+          "reference": "BILL-MEL-L40S-B-1015"
+        },
+        {
+          "id": "mel-l40s-b-2025-12-net",
+          "date": "2025-12-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2017.53,
+          "reference": "BILL-MEL-L40S-B-1016"
+        },
+        {
+          "id": "mel-l40s-b-2025-12-ops",
+          "date": "2025-12-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -7200,
+          "reference": "BILL-MEL-L40S-B-1017"
+        },
+        {
+          "id": "mel-l40s-b-2025-12-pwr",
+          "date": "2025-12-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -8105.58,
+          "reference": "BILL-MEL-L40S-B-1014"
+        },
+        {
+          "id": "mel-l40s-b-2025-12-mnt",
+          "date": "2025-12-15",
+          "kind": "maintenance",
+          "description": "Component replacement (PSU/fan) — paid from reserve, not from distributable cash",
+          "amount": 0,
+          "reference": "WO-MEL-L40S-B-1019 · reserve draw $520.59"
+        },
+        {
+          "id": "mel-l40s-b-2025-11-res",
+          "date": "2025-12-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (10% of revenue)",
+          "amount": -5058.72,
+          "reference": "RSV-MEL-L40S-B-1012"
+        },
+        {
+          "id": "mel-l40s-b-2025-11-rev",
+          "date": "2025-12-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2025-11 (61.7% utilisation)",
+          "amount": 50587.21,
+          "reference": "INV-MEL-L40S-B-1007"
+        },
+        {
+          "id": "mel-l40s-b-2025-11-col",
+          "date": "2025-11-30",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -9600,
+          "reference": "BILL-MEL-L40S-B-1009"
+        },
+        {
+          "id": "mel-l40s-b-2025-11-net",
+          "date": "2025-11-30",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2088.53,
+          "reference": "BILL-MEL-L40S-B-1010"
+        },
+        {
+          "id": "mel-l40s-b-2025-11-ops",
+          "date": "2025-11-30",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -7200,
+          "reference": "BILL-MEL-L40S-B-1011"
+        },
+        {
+          "id": "mel-l40s-b-2025-11-pwr",
+          "date": "2025-11-30",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -7495.48,
+          "reference": "BILL-MEL-L40S-B-1008"
+        },
+        {
+          "id": "mel-l40s-b-2025-10-res",
+          "date": "2025-11-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (10% of revenue)",
+          "amount": -5156.66,
+          "reference": "RSV-MEL-L40S-B-1006"
+        },
+        {
+          "id": "mel-l40s-b-2025-10-rev",
+          "date": "2025-11-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2025-10 (64.5% utilisation)",
+          "amount": 51566.64,
+          "reference": "INV-MEL-L40S-B-1001"
+        },
+        {
+          "id": "mel-l40s-b-2025-10-col",
+          "date": "2025-10-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -9600,
+          "reference": "BILL-MEL-L40S-B-1003"
+        },
+        {
+          "id": "mel-l40s-b-2025-10-net",
+          "date": "2025-10-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2042.29,
+          "reference": "BILL-MEL-L40S-B-1004"
+        },
+        {
+          "id": "mel-l40s-b-2025-10-ops",
+          "date": "2025-10-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -7200,
+          "reference": "BILL-MEL-L40S-B-1005"
+        },
+        {
+          "id": "mel-l40s-b-2025-10-pwr",
+          "date": "2025-10-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -7951.87,
+          "reference": "BILL-MEL-L40S-B-1002"
+        },
+        {
+          "id": "mel-l40s-b-acq",
+          "date": "2025-08-28",
+          "kind": "acquisition",
+          "description": "Acquisition of 128× NVIDIA L40S 48GB incl. servers & networking (demo)",
+          "amount": -1139200,
+          "reference": "PO-MEL-L40S-B-1000"
+        }
+      ]
+    },
+    {
+      "id": "bne-b200-c",
+      "name": "River City B200 Expansion",
+      "operator": "Demo Operator: Southern Cross Compute (fictional)",
+      "location": "Brisbane, QLD (liquid-cooled pod)",
+      "gpuModel": "NVIDIA B200 192GB",
+      "units": 32,
+      "acquisitionCost": 1472000,
+      "acquisitionDate": "2026-05-30",
+      "status": "Commissioning",
+      "kwPerGpu": 1.6,
+      "reserveRatePct": 8,
+      "holderSharePct": 70,
+      "tokenSupply": 1000000,
+      "tokenSymbol": "cRWA-B200C",
+      "serials": [
+        "DEMO-B200-0001",
+        "DEMO-B200-0002",
+        "DEMO-B200-0003",
+        "DEMO-B200-0004",
+        "DEMO-B200-0005",
+        "DEMO-B200-0006",
+        "DEMO-B200-0007",
+        "DEMO-B200-0008",
+        "DEMO-B200-0009",
+        "DEMO-B200-0010",
+        "DEMO-B200-0011",
+        "DEMO-B200-0012",
+        "DEMO-B200-0013",
+        "DEMO-B200-0014",
+        "DEMO-B200-0015",
+        "DEMO-B200-0016",
+        "DEMO-B200-0017",
+        "DEMO-B200-0018",
+        "DEMO-B200-0019",
+        "DEMO-B200-0020",
+        "DEMO-B200-0021",
+        "DEMO-B200-0022",
+        "DEMO-B200-0023",
+        "DEMO-B200-0024",
+        "DEMO-B200-0025",
+        "DEMO-B200-0026",
+        "DEMO-B200-0027",
+        "DEMO-B200-0028",
+        "DEMO-B200-0029",
+        "DEMO-B200-0030",
+        "DEMO-B200-0031",
+        "DEMO-B200-0032"
+      ],
+      "description": "Newly installed B200 pod in its commissioning period. Only three months of (fictional) operating history; early months include burn-in.",
+      "months": [
+        {
+          "month": "2026-07",
+          "hours": 744,
+          "utilizationPct": 34.43,
+          "pricePerGpuHour": 3.97,
+          "revenue": 32545.23,
+          "opex": {
+            "power": 5894.28,
+            "colocation": 11200,
+            "network": 2833.62,
+            "operations": 8800
+          },
+          "reserve": 2603.62
+        },
+        {
+          "month": "2026-08",
+          "hours": 744,
+          "utilizationPct": 41.58,
+          "pricePerGpuHour": 4,
+          "revenue": 39602.03,
+          "opex": {
+            "power": 6439.69,
+            "colocation": 11200,
+            "network": 2734.49,
+            "operations": 8800
+          },
+          "reserve": 3168.16
+        },
+        {
+          "month": "2026-09",
+          "hours": 720,
+          "utilizationPct": 53.03,
+          "pricePerGpuHour": 4.04,
+          "revenue": 49358.3,
+          "opex": {
+            "power": 7076.41,
+            "colocation": 11200,
+            "network": 2750.28,
+            "operations": 8800
+          },
+          "reserve": 3948.66
+        }
+      ],
+      "ledger": [
+        {
+          "id": "bne-b200-c-2026-09-res",
+          "date": "2026-10-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -3948.66,
+          "reference": "RSV-BNE-B200-C-1018"
+        },
+        {
+          "id": "bne-b200-c-2026-09-rev",
+          "date": "2026-10-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-09 (53.0% utilisation)",
+          "amount": 49358.3,
+          "reference": "INV-BNE-B200-C-1013"
+        },
+        {
+          "id": "bne-b200-c-2026-09-col",
+          "date": "2026-09-30",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -11200,
+          "reference": "BILL-BNE-B200-C-1015"
+        },
+        {
+          "id": "bne-b200-c-2026-09-net",
+          "date": "2026-09-30",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2750.28,
+          "reference": "BILL-BNE-B200-C-1016"
+        },
+        {
+          "id": "bne-b200-c-2026-09-ops",
+          "date": "2026-09-30",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -8800,
+          "reference": "BILL-BNE-B200-C-1017"
+        },
+        {
+          "id": "bne-b200-c-2026-09-pwr",
+          "date": "2026-09-30",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -7076.41,
+          "reference": "BILL-BNE-B200-C-1014"
+        },
+        {
+          "id": "bne-b200-c-2026-08-res",
+          "date": "2026-09-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -3168.16,
+          "reference": "RSV-BNE-B200-C-1012"
+        },
+        {
+          "id": "bne-b200-c-2026-08-rev",
+          "date": "2026-09-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-08 (41.6% utilisation)",
+          "amount": 39602.03,
+          "reference": "INV-BNE-B200-C-1007"
+        },
+        {
+          "id": "bne-b200-c-2026-08-col",
+          "date": "2026-08-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -11200,
+          "reference": "BILL-BNE-B200-C-1009"
+        },
+        {
+          "id": "bne-b200-c-2026-08-net",
+          "date": "2026-08-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2734.49,
+          "reference": "BILL-BNE-B200-C-1010"
+        },
+        {
+          "id": "bne-b200-c-2026-08-ops",
+          "date": "2026-08-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -8800,
+          "reference": "BILL-BNE-B200-C-1011"
+        },
+        {
+          "id": "bne-b200-c-2026-08-pwr",
+          "date": "2026-08-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -6439.69,
+          "reference": "BILL-BNE-B200-C-1008"
+        },
+        {
+          "id": "bne-b200-c-2026-07-res",
+          "date": "2026-08-05",
+          "kind": "reserve",
+          "description": "Maintenance reserve contribution (8% of revenue)",
+          "amount": -2603.62,
+          "reference": "RSV-BNE-B200-C-1006"
+        },
+        {
+          "id": "bne-b200-c-2026-07-rev",
+          "date": "2026-08-05",
+          "kind": "revenue",
+          "description": "Inference revenue settled for 2026-07 (34.4% utilisation)",
+          "amount": 32545.23,
+          "reference": "INV-BNE-B200-C-1001"
+        },
+        {
+          "id": "bne-b200-c-2026-07-col",
+          "date": "2026-07-31",
+          "kind": "expense",
+          "description": "Colocation & cooling",
+          "amount": -11200,
+          "reference": "BILL-BNE-B200-C-1003"
+        },
+        {
+          "id": "bne-b200-c-2026-07-net",
+          "date": "2026-07-31",
+          "kind": "expense",
+          "description": "Network & transit",
+          "amount": -2833.62,
+          "reference": "BILL-BNE-B200-C-1004"
+        },
+        {
+          "id": "bne-b200-c-2026-07-ops",
+          "date": "2026-07-31",
+          "kind": "expense",
+          "description": "Operations, monitoring & insurance",
+          "amount": -8800,
+          "reference": "BILL-BNE-B200-C-1005"
+        },
+        {
+          "id": "bne-b200-c-2026-07-pwr",
+          "date": "2026-07-31",
+          "kind": "expense",
+          "description": "Electricity",
+          "amount": -5894.28,
+          "reference": "BILL-BNE-B200-C-1002"
+        },
+        {
+          "id": "bne-b200-c-note",
+          "date": "2026-07-01",
+          "kind": "note",
+          "description": "Commissioning period: burn-in workloads and partial customer onboarding",
+          "amount": 0,
+          "reference": "NOTE"
+        },
+        {
+          "id": "bne-b200-c-acq",
+          "date": "2026-05-30",
+          "kind": "acquisition",
+          "description": "Acquisition of 32× NVIDIA B200 192GB incl. servers & networking (demo)",
+          "amount": -1472000,
+          "reference": "PO-BNE-B200-C-1000"
+        }
+      ]
+    }
+  ]
+}
