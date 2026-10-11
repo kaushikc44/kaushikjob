@@ -27,7 +27,7 @@ const tileValue = async (label) => (await page.locator(".label", { hasText: labe
 await page.goto(`${BASE}/inference`);
 await page.getByText("API Online · model ready").waitFor({ timeout: 20000 });
 const before = Number((await tileValue("Requests"))[2].replace(/,/g, ""));
-assert(before > 0, `dashboard shows ${before} recorded requests`);
+assert(Number.isInteger(before) && before >= 0, `dashboard shows ${before} recorded requests (a fresh ledger legitimately shows 0)`);
 assert((await text()).includes("$0.00"), "customer revenue shown as $0.00");
 await page.screenshot({ path: `${OUT}/inference-online.png`, fullPage: true });
 

@@ -15,7 +15,17 @@
     "gateway": "tsx gateway/main.ts",
     "gateway:keys": "tsx gateway/keys-cli.ts",
     "mock:model": "node scripts/mock-openai-server.mjs",
-    "check:bundle": "node scripts/check-bundle-secrets.mjs"
+    "check:bundle": "node scripts/check-bundle-secrets.mjs",
+    "mac:bootstrap": "node mac/bootstrap.mjs",
+    "mac:setup": "tsx mac/cli.ts setup",
+    "mac:doctor": "tsx mac/cli.ts doctor",
+    "mac:start": "tsx mac/cli.ts start",
+    "mac:stop": "tsx mac/cli.ts stop",
+    "mac:logs": "tsx mac/cli.ts logs",
+    "mac:verify": "tsx mac/cli.ts verify",
+    "mac:service": "tsx mac/cli.ts service",
+    "mac:remote": "tsx mac/cli.ts remote",
+    "mac:vercel": "tsx mac/cli.ts vercel"
   },
   "dependencies": {
     "@solana/spl-token": "0.4.14",

@@ -23,6 +23,7 @@
 | **Live inference:** authenticated OpenAI-compatible gateway for the Mac mini's Gemma 4 endpoint | `gateway/` | ✅ tested against a mock model server, **not yet against the real Mac mini** |
 | Usage ledger: request ID, time, model, measured tokens/latency/status, estimated cost | `gateway/ledger.ts` | ✅ |
 | Live inference dashboard: health, requests, latency, tokens, estimated cost, date range and source | `/inference` | ✅ |
+| **Mac mini plug-and-run:** setup, doctor, start/stop/logs, verify, launchd service, Tailscale access, Vercel preflight | `mac/` · [docs/mac-mini.md](docs/mac-mini.md) | ✅ tested with mocks and fakes; **not yet run on the real Mac mini** |
 | Simulator consumes live usage (actual revenue = $0) and a separately labelled hypothetical paid scenario | `/simulator` | ✅ |
 | Transparency view separating on-chain facts from off-chain inputs (mint, supply, signatures, timestamps, hash check) | `/transparency`, pool page | ✅ |
 
@@ -62,6 +63,12 @@ The gateway has its own settings in `gateway/.env.example`. See **[docs/live-inf
 | `node scripts/e2e-ui.mjs <dir>` | Playwright browser run of the full UI flow (burner wallet + local validator), saving screenshots |
 | `npm run gateway` | Starts the inference gateway (reads env; run on the Mac mini) |
 | `npm run gateway:keys -- create <name> --scopes inference` | Creates an API key (printed once; only its SHA-256 is stored). Also `list` and `revoke <id>` |
+| `node mac/bootstrap.mjs` | One command on a fresh checkout: `npm ci` if needed, then `mac:setup` |
+| `npm run mac:setup` / `mac:doctor` / `mac:verify` | Detect runtime + model and configure; diagnostics (+ `--json`); real end-to-end check. See [docs/mac-mini.md](docs/mac-mini.md) |
+| `npm run mac:start` / `mac:stop` / `mac:logs` | Background gateway with logs outside the repo (keys redacted) |
+| `npm run mac:service -- install\|status\|stop\|remove` | Optional launchd user agent (explicit action, no root) |
+| `npm run mac:remote -- private\|public\|off\|verify <url>` | Tailscale access to the gateway only; dry-run unless `--apply` |
+| `npm run mac:vercel` | Server-side env preflight for Vercel (never prints values, never deploys) |
 | `npm run mock:model` | **Mock** OpenAI-compatible model server for testing without the Mac mini (not Gemma) |
 | `npm run check:bundle` | After `build`, fails if the gateway URL, read key or model-server port appears in browser-delivered files |
 | `node scripts/e2e-inference.mjs <dir>` | Playwright run of the live-inference dashboard and simulator, including the gateway-offline state |
@@ -139,6 +146,9 @@ computerwa/
 │  ├─ e2e-inference.mjs       browser e2e of /inference + simulator (incl. offline)
 │  ├─ mock-openai-server.mjs  MOCK model server for testing without the Mac mini
 │  └─ check-bundle-secrets.mjs
+├─ mac/                       Mac mini tooling (setup, doctor, verify, launchd, remote, vercel preflight)
+│  ├─ cli.ts / bootstrap.mjs / run-gateway.ts
+│  └─ lib/*.ts, lib/*.test.ts
 ├─ gateway/                   inference gateway (Node, zero runtime deps) — runs on the Mac mini
 │  ├─ server.ts               routes, validation, limits, idempotency, structured errors
 │  ├─ keys.ts / keys-cli.ts   hashed API keys + CLI
@@ -161,7 +171,7 @@ computerwa/
 
 What was actually run while building this (October 2026):
 
-1. `npm run typecheck`, `npm run lint`, `npm test` (66 tests: the original 34 plus 32 for the gateway and inference accounting) and `npm run build` all pass.
+1. `npm run typecheck`, `npm run lint`, `npm test` (145 tests: the original 34, 32 for the gateway and inference accounting, and 79 for the Mac tooling) and `npm run build` all pass.
 2. **On-chain flow against a real Solana validator.** The build container's network policy blocked `api.devnet.solana.com`, so both end-to-end runs used `solana-test-validator` (Agave 2.1.21), which runs the same SPL Token, Associated Token and Memo programs as devnet:
    * `SOLANA_RPC=http://127.0.0.1:8899 npm run e2e:chain` covers: genesis check → airdrop → register memo → atomic mint of 1,000,000 → transfer to 2 holders → read supply and 3 holders back from chain → rediscover all 3 records from signature history → allocate the holder pool using on-chain balances.
    * `scripts/e2e-ui.mjs` drives the **real UI** in Chromium with the burner wallet. It runs the same steps through the buttons, checks the hash badge says *matches*, checks the simulator picks up the on-chain balances, triggers a shortfall scenario and an input validation error, checks the transparency page, checks there is no horizontal scroll at 390px, and checks the 404 page.
@@ -170,7 +180,8 @@ What was actually run while building this (October 2026):
    * A manual run with the real `npm run gateway` process, CLI-created keys and `curl` exercised: 200 with `x-request-id`, 409 on a retried Idempotency-Key, 401, 403, 413 and 429, plus a usage summary. The ledger file was checked for the prompt canary (0 matches).
    * `scripts/e2e-inference.mjs` ran in Chromium against the production build. It checked: dashboard *Online*, the request count incrementing after a live request, revenue $0.00, simulator live-actual revenue 0 and holder pool $0.00, the hypothetical label, the manual-edit flag, that the browser never contacted the gateway, then stopped the gateway and checked *API Offline* with no substituted data.
    * `npm run check:bundle` passed on a build configured with real gateway env values, and a negative control (a string known to be in the bundle) correctly failed.
-4. **Not yet run from this environment:** the real Mac mini and Gemma 4 runtime, a public tunnel or Vercel deployment, a transaction on the public devnet cluster, and a Phantom/Solflare extension signing. The code path is identical (only the RPC URL changes, and extension wallets go through the same `signTransaction` interface), but run steps 1–4 below once on devnet before demoing.
+4. **Mac tooling (setup, doctor, verify, service, remote, Vercel preflight).** Tested in the Linux sandbox with mock model servers and fake `launchctl`/`tailscale`/`ollama`. Also run for real there: `mac:setup` → `mac:start` → `mac:verify` (including the dashboard route on a running `next start` and `--offline-test`) → `mac:logs` → `mac:stop`, and `node mac/bootstrap.mjs` on a fresh copy (`npm ci` → setup). Every report marks each check as `LOCAL`, `REMOTE`, `MOCK` or `NOT RUN · needs …`; see [docs/mac-mini.md](docs/mac-mini.md#what-was-and-was-not-verified).
+5. **Not yet run from this environment:** the real Mac mini and Gemma 4 runtime, macOS launchd/`pmset`, Tailscale/Cloudflare tunnels, a Vercel deployment, a transaction on the public devnet cluster, and a Phantom/Solflare extension signing. The code path is identical (only the RPC URL changes, and extension wallets go through the same `signTransaction` interface), but run steps 1–4 below once on devnet before demoing.
 
 No transaction signatures are included in this repo. Every signature the app shows is read live from the cluster you connect to.
 

@@ -7,6 +7,8 @@
  ComputeRWA server route /api/inference ──usage:read key──▶ gateway  (browser never sees URL or key)
 ```
 
+> **Fast path:** `node mac/bootstrap.mjs`, then follow **[docs/mac-mini.md](mac-mini.md)**. It automates the detection, config, keys, background run, verification, launchd service, Tailscale access and Vercel preflight described below. This page remains the reference for the gateway's API and ledger.
+
 The gateway works with any runtime that serves OpenAI-style `POST /v1/chat/completions` and `GET /v1/models`. **This was tested against a mock server only**, because the Mac mini wasn't reachable from the build environment. Run the "verify" steps below on the Mac mini before the demo.
 
 ## 1. Mac mini setup
@@ -34,8 +36,8 @@ Requirements: Node.js 20 or newer (`node -v`) and your Gemma 4 runtime.
    ```
 5. **Run it:**
    ```bash
-   set -a; source gateway/.env; set +a
-   caffeinate -is npm run gateway       # keeps the Mac awake while it runs
+   npm run mac:start                    # loads gateway/.env itself; logs in ~/Library/Logs/ComputeRWA
+   # manual alternative: set -a; source gateway/.env; set +a; caffeinate -is npm run gateway
    ```
    Also turn off automatic sleep in System Settings → Energy. To survive reboots, wrap the command in a launchd agent or `pm2`.
 6. **Verify locally:**
